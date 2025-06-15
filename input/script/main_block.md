@@ -1,0 +1,1 @@
+This code block is a conditional statement that ensures the code within it only executes when the script is run directly, not when it's included as a module in another script.  `if __FILE__ == $0` checks if the current file being executed is the same as the script being run. `$0` represents the name of the script being executed.

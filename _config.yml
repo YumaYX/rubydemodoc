@@ -1,0 +1,5 @@
+title: Ruby Demo Doc
+description: Quick reference for efficient coding 
+exclude:
+  - Gemfile
+  - Gemfile.lock

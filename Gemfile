@@ -3,4 +3,8 @@
 source "https://rubygems.org"
 
 gem "rake"
+gem "rubocop"
+gem "irb"
 
+gem "roo"
+gem "base64"

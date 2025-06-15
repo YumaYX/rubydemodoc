@@ -1,0 +1,1 @@
+This code uses the `roo` gem to read an Excel file named `book.xlsx`. Specifically, it uses the `Roo::Excelx` class to access an Excel file with extended features. The code then accesses the sheets within the Excel file using `xlsx.sheets`, which returns a list of sheet names.

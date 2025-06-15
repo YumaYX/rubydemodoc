@@ -1,0 +1,1 @@
+Here's the code that splits the provided text into an array of strings, where each string represents a line and the trailing newline character is removed. Note that the code utilizes the `lines` method to iterate over the lines of the text and then uses the `chomp` method to remove the newline characters from each line, resulting in an array of strings.

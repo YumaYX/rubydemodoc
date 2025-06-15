@@ -1,0 +1,1 @@
+This Ruby code iterates through each line in `foreach_b.txt` and for each of those lines, it iterates through every line in `foreach_a.txt`.  If a line from `foreach_b.txt` matches a line from `foreach_a.txt`, it prints "MATCHED: " followed by the matching line, and then exits the inner loop. It essentially searches for identical lines between the two files.

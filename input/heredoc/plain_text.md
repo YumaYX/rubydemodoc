@@ -1,0 +1,1 @@
+**String:** Represents text data.
