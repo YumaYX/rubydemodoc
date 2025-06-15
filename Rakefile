@@ -18,7 +18,7 @@ end
 desc 'Generate Markdown index from input/**/*.rb files'
 task :generate_index do
   file_list = FileList['input/**/*.rb']
-  generate_index(file_list, link_prefix: '/reponame/')
+  generate_index(file_list, link_prefix: '/rubydemodoc/')
 end
 
 require 'rubocop/rake_task'
