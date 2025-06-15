@@ -34,7 +34,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build Pages (markdown + ruby script)
-        run: make build
+        run: |
+          rake
+          cp -pr output/* .
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
