@@ -35,12 +35,13 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build Pages (markdown + ruby script)
         run: |
-          rake
-          cp -pr output/* .
           cat <<'GEMFILEEOF' >> Gemfile
           gem 'ys1', git: 'https://github.com/YumaYX/YS1.git'
           GEMFILEEOF
           bundle install
+          rake
+          cp -pr output/* .
+
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
