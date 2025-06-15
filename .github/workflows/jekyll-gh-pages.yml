@@ -39,7 +39,7 @@ jobs:
           gem 'ys1', git: 'https://github.com/YumaYX/YS1.git'
           GEMFILEEOF
           bundle install
-          rake
+          bundle exec rake
           cp -pr output/* .
 
       - name: Build with Jekyll
