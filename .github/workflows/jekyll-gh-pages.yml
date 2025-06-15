@@ -37,6 +37,10 @@ jobs:
         run: |
           rake
           cp -pr output/* .
+          cat <<'GEMFILEEOF' >> Gemfile
+          gem 'ys1', git: 'https://github.com/YumaYX/YS1.git'
+          GEMFILEEOF
+          bundle install
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
