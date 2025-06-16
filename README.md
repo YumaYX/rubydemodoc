@@ -60,9 +60,9 @@ Each file generates a Markdown file like:
 
 <contents of example.md if exists>
 
-````ruby
+```ruby
 #=> cleaned IRB output from example.rb
-````
+\```
 ```
 
 ## Use Cases
