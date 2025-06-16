@@ -1,5 +1,3 @@
-## 📄 About
-
 This Ruby code uses the `ys1` library to extract **sections** from a plain text file based on headings that match a specific pattern.
 
 - The input file contains Markdown-style text with headings starting with `# `.
