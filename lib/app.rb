@@ -98,6 +98,6 @@ def process_file(path)
   File.open(dest, 'a') do |f|
     f.puts "\n"
     f.puts markdown_result
-    f.puts "\nExecuted with Ruby #{RUBY_VERSION}."
+    f.puts "\nExecuted with Ruby `#{RUBY_VERSION}`."
   end
 end
