@@ -62,7 +62,7 @@ Each file generates a Markdown file like:
 
 ````ruby
 #=> cleaned IRB output from example.rb
-\```
+````
 ```
 
 ## Use Cases
