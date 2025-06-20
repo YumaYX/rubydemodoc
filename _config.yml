@@ -1,6 +1,5 @@
-title: Ruby Quick Reference
+title: Ruby Demo Doc
 description: Quick reference for efficient coding 
-theme: jekyll-theme-architect
 exclude:
   - Gemfile
   - Gemfile.lock
