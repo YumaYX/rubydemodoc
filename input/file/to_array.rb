@@ -1,1 +1,1 @@
-File.readlines('file.txt').map(&:chomp)
+File.readlines('input/file/file.txt').map(&:chomp)
