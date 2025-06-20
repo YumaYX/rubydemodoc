@@ -1,4 +1,4 @@
 require 'roo'
 
-xlsx = Roo::Excelx.new('./book.xlsx')
+xlsx = Roo::Excelx.new('input/roo/book.xlsx')
 xlsx.sheets

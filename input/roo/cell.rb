@@ -1,6 +1,6 @@
 require 'roo'
 
-xlsx = Roo::Excelx.new('./book.xlsx')
+xlsx = Roo::Excelx.new('input/roo/book.xlsx')
 sh1 = xlsx.sheet('mysheet')
 sh1.cell(1,1)
 sh1.cell(1,2)
