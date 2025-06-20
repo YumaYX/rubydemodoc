@@ -7,3 +7,4 @@ gem "rubocop"
 gem "irb"
 
 gem "roo"
+gem "base64"
