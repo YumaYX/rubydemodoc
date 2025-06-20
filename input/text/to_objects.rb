@@ -1,5 +1,5 @@
 require "csv"
-data = CSV.read("input/Text/group.csv", encoding: "BOM|UTF-8", headers: true).map(&:to_h)
+data = CSV.read("input/text/group.csv", encoding: "BOM|UTF-8", headers: true).map(&:to_h)
 
 class Family
   attr_accessor :children
