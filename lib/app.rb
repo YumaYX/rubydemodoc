@@ -83,11 +83,11 @@ def process_file(path)
   FileUtils.mkdir_p('output')
 
   File.open(dest, 'w') do |f|
+    f.puts "\n**Heads up:** This description was created by AI and might not be 100% accurate.\n\n"
     # 1. heading1で .rbファイル名を追加
     f.puts "# #{parser.base_name}"
     f.puts
 
-    f.puts "**Heads up:** This description was created by AI and might not be 100% accurate.\n\n"
     # 2. 元のMarkdownの内容（存在すれば）
     md_path = File.join(parser.dir_name, parser.md_name)
     if File.exist?(md_path)
