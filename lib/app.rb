@@ -83,7 +83,7 @@ def process_file(path)
   FileUtils.mkdir_p('output')
 
   File.open(dest, 'w') do |f|
-    f.puts "\n**Heads up:** This description was created by AI and might not be 100% accurate.\n\n"
+    f.puts "\n<small><strong>Heads up:</strong> This description was created by AI and might not be 100% accurate.</small>\n"
     # 1. heading1で .rbファイル名を追加
     f.puts "# #{parser.base_name}"
     f.puts
