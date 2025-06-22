@@ -1,5 +1,1 @@
-This code uses Ruby's ERB (Embedded Ruby) engine to process a template file (`file.html.erb`). 
-
-*   **`require 'erb'`**:  Loads the ERB library, which provides the functionality for parsing and executing Ruby code within HTML templates.
-*   **`ERB.new(File.read('input/erb/file.html.erb'))`**: Creates a new ERB object, reading the contents of the specified HTML file.
-*   **.result(binding)**:  Executes the ERB template, replacing placeholders (like `<%= expression %>`) with their evaluated results.  `binding` provides access to the current Ruby environment, allowing the template to access variables and execute code.
+This Ruby code snippet demonstrates the use of the ERB (Embedded Ruby) library to render a template file. The `require 'erb'` statement loads the necessary library for working with ERB templates.  `ERB.new(File.read('input/erb/file.html.erb'))` creates a new ERB object, reading the content of the `file.html.erb` file located in the `input/erb` directory. The `.result(binding)` method then executes the ERB template, effectively evaluating any Ruby code embedded within the template.  This allows the template's logic and variables to be processed and rendered, typically resulting in the generation of HTML output.

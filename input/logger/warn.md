@@ -1,5 +1,1 @@
-*   `puts`: Prints to the console.
-*   `logger.warn`: Logs a warning message.
-*   `logger.info`: Logs an informational message.
-*   `logger.debug`: Logs a debug message.
-*   `logger.level = Logger::WARN`: Sets the logging level to WARN, so only WARN, ERROR, and FATAL messages are logged.
+This Ruby code snippet demonstrates how to configure and use a logger object to handle log messages with different severity levels. The `require 'logger'` statement imports the necessary library for logging functionality. A `Logger` object named `logger` is instantiated and configured to output to standard output (`STDOUT`). The code then prints a "WARN" level message to the console. Subsequently, the `logger.level = Logger::WARN` line changes the logger's level to WARN, meaning only messages with WARN or higher severity (ERROR, FATAL) will be logged. The `logger.warn("Nothing to do!")` line generates a WARN-level log message, which is output to the console.  The `logger.info("Program started")` and `logger.debug("Created logger")` lines are not executed because the logger’s level is set to WARN, so messages lower than that level are suppressed.

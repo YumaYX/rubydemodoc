@@ -1,3 +1,1 @@
-*   `Digest::MD5.hexdigest('ruby')` - Calculates the MD5 hash (hexadecimal representation) of the string "ruby".  Output: `a89e0664919e80666c02d4f95a6186a8`
-
-*   `Digest::MD5.file('input/digest/md5sum.rb').to_s` - Calculates the MD5 hash of the file 'input/digest/md5sum.rb' and returns it as a string.  Output: `d41d8cd98f00b204e9800998ecf8427e`
+This Ruby code snippet demonstrates how to calculate the MD5 hash of a string and how to get the MD5 hash of a file.  The first line utilizes the `digest/md5` library to calculate the MD5 hash of the string "ruby", which is then returned as a hexadecimal string. The second line uses the `Digest::MD5.file` method to calculate the MD5 hash of the file named `input/digest/md5sum.rb`. The `.to_s` method converts the resulting hash object into a string representation, displaying the hexadecimal representation of the file's MD5 hash.

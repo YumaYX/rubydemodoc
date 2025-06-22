@@ -1,10 +1,1 @@
-This code uses Ruby to fetch data from the OpenBD API based on an ISBN. 
-
-Here's a breakdown:
-
-*   `require "net/http"`:  Includes the `net/http` library, which allows the code to make HTTP requests.
-*   `require "json"`: Includes the `json` library, enabling the code to parse JSON responses.
-*   `url = "https://api.openbd.jp/v1/get?isbn=9784791765553"`: Defines the URL of the OpenBD API, with the ISBN "9784791765553" as a parameter.
-*   `uri = URI(url)`: Creates a `URI` object from the URL string. This is necessary for the `Net::HTTP` library.
-*   `response = Net::HTTP.get(uri)`: Sends an HTTP GET request to the URI and retrieves the response body as a string.
-*   `JSON.parse(response)`: Parses the response string (which is expected to be JSON) into a Ruby object (usually a hash or an array) for further processing.
+This Ruby code snippet demonstrates a program that fetches book data from the OpenBD API using the ISBN 9784791765553. First, the `net/http` and `json` libraries are required to facilitate network communication and JSON parsing, respectively.  A URL pointing to the OpenBD API endpoint with the specified ISBN is defined. The `Net::HTTP.get` method then uses this URL to retrieve the raw response from the API. Finally, the `JSON.parse` method takes this response (which is assumed to be a JSON string) and converts it into a Ruby hash or array object, allowing further processing of the retrieved book data.

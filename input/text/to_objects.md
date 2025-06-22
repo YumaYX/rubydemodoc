@@ -1,7 +1,5 @@
-The code processes a CSV file to create a family tree structure. 
+This Ruby code snippet demonstrates the creation of a data structure representing family relationships from a CSV file. The code first reads a CSV file named "input/text/group.csv" using the `CSV` library, handling potential encoding issues (specifically BOM|UTF-8) and assuming the file has headers. The data is then transformed into an array of hashes, where each hash represents a person and their associated data. 
 
-- It reads the CSV data, organizes it into a list of family member hashes.
-- It creates `Family` objects, associating them with parents and children.
-- The code iterates through the data, creating `Family` objects based on parent-child relationships.
-- Children are added to the appropriate `Family` object's `children` array.
-- Finally, the code returns the list of `Family` objects.
+Next, a `Family` class is defined with an `attr_accessor` for `children`. This class is used to represent each family unit, storing a list of children.  An array named `arr` is initialized to hold these `Family` objects.
+
+The code iterates through the array of hashes created from the CSV data. Inside the loop, it checks if a "parent" value exists in the current hash. If a "parent" value is present, it creates a new `Family` object using the "parent" value and appends the "child" value to the `children` array of the last family in the `arr` array.  If a "parent" value is absent, it simply appends the "child" value to the `children` array of the last family in the `arr` array. Finally, the code returns the `arr` array, which contains `Family` objects organized based on the parent-child relationships found in the CSV data.

@@ -1,5 +1,1 @@
-*   `puts`: Prints text to the console.
-*   `logger.level = Logger::INFO`: Sets the logging level to INFO.  This determines which messages are actually logged.
-*   `logger.warn`: Logs a warning message.
-*   `logger.info`: Logs an informational message.
-*   `logger.debug`: Logs a debug message.
+This Ruby code snippet demonstrates the use of the `Logger` class to manage output, showcasing different logging levels and their corresponding visibility.  The code initializes a logger object, `logger`, which is configured to write to standard output (`STDOUT`). It then attempts to print "Level INFO" to the console, but the logger's level is set to `Logger::INFO`, effectively suppressing this output.  The `logger.warn` method generates a warning message ("Nothing to do!") which will be displayed, as warnings are always logged regardless of the configured level. Subsequently, the `logger.info` method produces a log message ("Program started"), and the `logger.debug` method creates a log message ("Created logger"), but this message is not displayed because the logger's level is set to `Logger::INFO`, which filters out debug messages.

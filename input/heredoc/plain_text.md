@@ -1,1 +1,1 @@
-**String:** Represents text data.
+This Ruby code snippet demonstrates the use of the heredoc syntax in Ruby. Specifically, it defines a string variable named `doc` that contains a simple string literal: "string". The `<<~'EOL'` part is a heredoc syntax that allows you to define a multi-line string, with `EOL` being a newline character used as a delimiter for the string.  Essentially, this makes it a convenient way to create strings that contain newlines, which would otherwise require manually adding them.

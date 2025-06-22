@@ -1,4 +1,5 @@
-*   `%w(a b c "#{str}")`: Creates an array of strings.
-*   `%W(a b c "#{str}")`: Same as `%w()`.
-*   `%i(a b c "#{str}")`: Creates an array of integers.
-*   `%I(a b c "#{str}")`: Same as `%i()`.
+This Ruby code snippet demonstrates the differences between the `%w`, `%W`, `%i`, and `%I` array literal operators. These operators are used to create arrays from various data types, but they differ in how they handle strings and how they are case-sensitive.
+
+The `%w(a b c "#{str}")` and `%W(a b c "#{str}")` operators create arrays of strings.  The key difference is that `%w` is case-sensitive, meaning it will treat "ruby" as a distinct string. Consequently, the resulting array will be `["a", "b", "c", "ruby"]`. Conversely, `%W` is case-insensitive and treats "ruby" as "ruby".  Therefore, the resulting array will also be `["a", "b", "c", "ruby"]`.  Both operators are used for creating arrays of strings from literal values.
+
+The `%i(a b c "#{str}")` and `%I(a b c "#{str}")` operators create arrays of integers. Similar to the string operators, `%i` is case-sensitive and will treat "ruby" as an integer. Consequently, it will raise a `TypeError` because "ruby" is not a valid integer.  Conversely, `%I` is case-insensitive and also treats "ruby" as an integer, resulting in an identical `TypeError`. Both operators are used for creating arrays of integers from literal values.

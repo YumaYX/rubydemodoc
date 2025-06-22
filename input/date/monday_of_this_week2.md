@@ -1,4 +1,1 @@
-This code calculates the date of the previous Monday.
-
-*   `today = Time.now`: Gets the current date and time.
-*   `this_monday = today - (today.wday - 1) * 24 * 60 * 60`: Subtracts the difference in seconds from the current date to the previous Monday.  `today.wday` returns the day of the week (0 = Sunday, 1 = Monday, ..., 6 = Saturday).  The code then calculates the number of seconds to subtract to reach the previous Monday.
+This Ruby code snippet demonstrates how to calculate the date of the previous Monday. Specifically, the code first obtains the current date and time using `Time.now`.  Then, it determines the number of seconds between the current time and the beginning of the current day (which is midnight).  Finally, it subtracts this difference from the current time to arrive at the date and time representing the previous Monday.  The `today.wday` returns the day of the week as a number (0 for Sunday, 1 for Monday, etc.), and multiplying this by 24 * 60 * 60 (seconds in a day) calculates the time difference.

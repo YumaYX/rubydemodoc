@@ -1,8 +1,1 @@
-**RC2XX**
-
-This Ruby code checks if a given URL returns a successful HTTP status code (200-299).
-
-1.  **Parses the URL:** It parses the URL string into its components (host, port, path).
-2.  **Creates an HTTP Connection:** It establishes a connection to the URL's server.  It uses SSL if the URL is HTTPS.
-3.  **Sends a GET Request:** It sends a GET request to the specified path.
-4.  **Checks the Response Code:** It retrieves the HTTP response code and checks if it's within the range of 200 to 299 (inclusive). This indicates a successful HTTP request.
+This Ruby code snippet demonstrates a function named `rc2xx?` that checks if a given URL returns a successful HTTP status code (ranging from 200 to 299). The function takes a URI string as input and attempts to make a GET request to that URI. It utilizes the `net/http` library to establish an HTTP connection, handling both HTTP and HTTPS URLs based on the scheme provided. If the request is successful, it checks if the HTTP status code falls within the range of 200 to 299, indicating a successful response. In the provided example, the function is called with the URL "https://yumayx.github.io/", and it would likely return `true` as that URL generally returns a 200 OK status code, signifying a successful HTTP request.

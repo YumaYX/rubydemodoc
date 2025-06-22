@@ -1,2 +1,1 @@
-`t = Time.now` - Assigns the current date and time to the variable `t`.
-`t.strftime("%F")` - Formats the date and time stored in `t` as a string, using the format code "%F" (YYYY-MM-DD).
+This Ruby code snippet demonstrates how to obtain the current date in a formatted string. The `Time.now` method retrieves the current date and time as a `Time` object. The `strftime("%F")` method then formats this `Time` object into a string representation of the date, using the format string "%F". Specifically, "%F" represents the ISO 8601 date format, which is "YYYY-MM-DD" (e.g., 2023-10-27). Therefore, the code first captures the current time and then formats it into a date string in the specified format.

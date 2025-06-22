@@ -1,2 +1,1 @@
-`Date::MONTHNAMES` 
-A hash containing the names of the months in English.
+This Ruby code snippet demonstrates the use of the `Date` module and its `MONTHNAMES` constant. The `require 'date'` statement loads the `Date` module into the current Ruby environment, which provides a class for working with dates and times.  The `Date::MONTHNAMES` constant is a predefined array containing the full names of all twelve months of the year in English, allowing you to easily access and utilize them within your Ruby programs for date formatting and manipulation.

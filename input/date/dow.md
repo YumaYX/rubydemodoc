@@ -1,8 +1,1 @@
-`DOW_JP` is an array of strings representing days of the week in Japanese. 
-*   `日` (nichi) - Sunday
-*   `月` (getsu) - Monday
-*   `火` (ka) - Tuesday
-*   `水` (sui) - Wednesday
-*   `木` (moku) - Thursday
-*   `金` (kin) - Friday
-*   `土` (do) - Saturday
+This Ruby code snippet demonstrates the creation of a constant array named `DOW_JP` which represents the days of the week in Japanese. Specifically, it initializes an array containing the Japanese names for each day of the week: “日” (Ni – Sunday), “月” (Getsu – Monday), “火” (Ka – Tuesday), “水” (Sui – Wednesday), “木” (Moku – Thursday), “金” (Kin – Friday), and “土” (Do – Saturday). The `.map(&:freeze)` part iterates through each element of the array and applies the `freeze` method, effectively making each element immutable once it's created, and finally `.freeze` freezes the entire array, preventing further modifications after initialization.

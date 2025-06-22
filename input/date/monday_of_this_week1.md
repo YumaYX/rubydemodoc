@@ -1,3 +1,1 @@
-`Date.today`: Gets the current date.
-`today.wday`:  Gets the day of the week (0=Sunday, 1=Monday, ..., 6=Saturday).
-`today - today.wday + 1`: Calculates the date of the previous Monday.
+This Ruby code snippet demonstrates how to calculate the date of the previous Monday. The code first imports the `Date` class from the `date` library, which allows us to work with dates in Ruby. It then obtains the current date using `Date.today`. Subsequently, it determines the date of the previous Monday by subtracting the current day of the week (obtained through `today.wday`) from the current date, adding 1 to the result, effectively calculating the Monday that occurred before the current date. The `this_monday` variable will hold the date of the previous Monday.

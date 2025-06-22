@@ -1,1 +1,1 @@
-Reads a line from standard input.
+This Ruby code snippet demonstrates the use of the `stdin.read` method, which reads the entire contents of the standard input stream. The `stdin` object represents the standard input, typically the console where the program is run.  The `read` method consumes all data available in the standard input and returns it as a string. This is useful for receiving user input directly into the program.
