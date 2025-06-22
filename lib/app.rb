@@ -92,7 +92,7 @@ def process_file(path)
     if File.exist?(md_path)
       f.puts File.read(md_path)
     else
-      f.puts "\n**Heads up:** This description was created by AI and might not be 100% accurate.\n"
+      f.puts "\n**Heads up:** This description was created by AI and might not be 100% accurate.\n\n"
       description = describe_codes(path)
       File.write(md_path, description)
       f.puts description
