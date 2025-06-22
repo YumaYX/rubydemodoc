@@ -87,12 +87,12 @@ def process_file(path)
     f.puts "# #{parser.base_name}"
     f.puts
 
+    f.puts "**Heads up:** This description was created by AI and might not be 100% accurate.\n\n"
     # 2. 元のMarkdownの内容（存在すれば）
     md_path = File.join(parser.dir_name, parser.md_name)
     if File.exist?(md_path)
       f.puts File.read(md_path)
     else
-      f.puts "\n**Heads up:** This description was created by AI and might not be 100% accurate.\n\n"
       description = describe_codes(path)
       File.write(md_path, description)
       f.puts description
