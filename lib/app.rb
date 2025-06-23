@@ -74,6 +74,7 @@ def clean_irb_output(irb_output)
 end
 
 def process_file(path)
+  puts File.basename(path)
   parser = FilePathParser.new(path)
 
   # 出力ファイル名を 親ディレクトリ_ファイル名.md に変更
@@ -83,8 +84,10 @@ def process_file(path)
   FileUtils.mkdir_p('output')
 
   File.open(dest, 'w') do |f|
-    f.puts "\n<small><strong>Heads up:</strong> This description was created by AI and might not be 100% accurate.</small>\n"
+    f.puts
+    f.puts "<small><strong>Heads up:</strong> This description was created by AI and might not be 100% accurate.</small>"
     # 1. heading1で .rbファイル名を追加
+    f.puts
     f.puts "# #{parser.base_name}"
     f.puts
 

@@ -3,12 +3,10 @@ require 'uri'
 require 'json'
 
 def ollama_request(prompt)
-  url = URI.parse('http://localhost:11434/api/chat')
+  url = URI.parse('http://localhost:11434/api/generate')
   data = {
     "model": 'gemma3',
-    "messages": [
-      { "role": 'user', "content": prompt }
-    ],
+    "prompt": prompt,
     "stream": false
   }
   http = Net::HTTP.new(url.host, url.port)
@@ -21,7 +19,7 @@ def ollama_request(prompt)
                                 })
   request.body = data.to_json
   response = http.request(request)
-  JSON.parse(response.body)["message"]["content"]
+  JSON.parse(response.body)["response"]
 end
 
 def describe_codes(file_name)
@@ -29,3 +27,4 @@ def describe_codes(file_name)
   content = "Write about the following ruby codes in English using markdown format. Just the answer. Please omit backticks. Add a note to answer in complete sentences. Start your response with 'This Ruby code snippet demonstrates'.\n---\n#{content}"
   ollama_request(content)
 end
+
