@@ -109,7 +109,7 @@ def process_file(path)
   markdown_result = "```ruby\n#{clean_irb_output(result)}```"
 
   File.open(dest, 'a') do |f|
-    f.puts "\n"
+    f.puts "\n## Ruby code snippet\n"
     f.puts markdown_result
     f.puts "\nExecuted with Ruby `#{RUBY_VERSION}`."
   end
