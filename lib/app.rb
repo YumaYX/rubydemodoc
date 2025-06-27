@@ -101,7 +101,11 @@ def process_file(path)
       f.puts description
     end
     f.puts
-    f.puts File.read("#{md_path}x") if File.exist?("#{md_path}x")
+    if File.exist?("#{md_path}x")
+      f.puts "### Additional Note"
+      f.puts File.read("#{md_path}x")
+      f.puts
+    end
   end
 
   # 3. IRB結果をコードブロックで追記
