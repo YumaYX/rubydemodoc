@@ -5,7 +5,7 @@ require 'json'
 def ollama_request(prompt)
   url = URI.parse('http://localhost:11434/api/generate')
   data = {
-    "model": 'gemma3',
+    "model": 'codellama:7b-instruct',
     "prompt": prompt,
     "stream": false
   }

@@ -1,1 +1,7 @@
-This Ruby code snippet demonstrates how to interact with an Excel file using the `roo` gem. First, the `require 'roo'` statement loads the necessary library. Then, `Roo::Excelx.new('input/roo/book.xlsx')` initializes an Excelx object, specifying the path to the Excel file named "book.xlsx" located within the "input/roo" directory. Subsequently, `sh1 = xlsx.sheet('mysheet')` accesses a specific sheet named "mysheet" within the Excel file, assigning it to the variable `sh1`. The code then attempts to access the cell at row 1, column 1 using `sh1.cell(1,1)`. Similarly, `sh1.cell(1,2)` attempts to access the cell at row 1, column 2. Finally, `sh1.last_row` retrieves the index of the last row in the "mysheet" sheet, and `sh1.last_column` retrieves the index of the last column in the same sheet.
+ This Ruby code snippet demonstrates the use of the Roo gem to read data from an Excel spreadsheet in XLSX format. The first line imports the Roo library, which provides a convenient interface for reading and writing Excel files.
+
+The second line creates a new instance of the Roo::Excelx class, which represents the Excel file being opened. The file is located at 'input/roo/book.xlsx'.
+
+The third line retrieves a reference to a sheet in the Excel file by its name, using the sheet() method. In this case, the sheet's name is 'mysheet'.
+
+The fourth and fifth lines retrieve the value of the cell at row 1 and column 1 (the upper left-hand corner) and column 2 (the cell immediately to the right of it). The last_row() method retrieves the number of rows in the sheet, while the last_column() method retrieves the number of columns.

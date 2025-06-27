@@ -1,1 +1,15 @@
-This Ruby code snippet demonstrates the use of the heredoc syntax, specifically the `<<~` operator, for defining a multiline string. The `<<~` operator is a shorthand way to create a string literal that can contain arbitrary content, including newline characters, without needing to explicitly escape them. The string defined within the heredoc, enclosed by `EOL` markers, is assigned to the variable `doc`. This is a common technique for writing strings with embedded newlines for improved readability and maintainability.
+ This Ruby code snippet demonstrates how to use a here document to assign a string value to a variable named `doc`. The here document is denoted by the `<<` and `EOL` markers, which indicate that the text between them should be treated as a single string.
+
+Here is an example of how this code might be used:
+```
+doc = <<~'EOL'
+  This is a string with multiple lines.
+  It can contain anything you want, including special characters like $ or @.
+EOL
+puts doc
+```
+This code would output the following string to the console:
+```
+This is a string with multiple lines.
+It can contain anything you want, including special characters like $ or @.
+```

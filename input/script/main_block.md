@@ -1,1 +1,11 @@
-This Ruby code snippet demonstrates a common pattern used to ensure that certain code within a Ruby script is only executed when the script is run directly, and not when it's included as a module or library in another script. Specifically, the `if __FILE__ == $0` condition checks if the current file being executed is the main script. The variable `$0` represents the name of the script being executed, and `__FILE__` is a special Ruby variable that contains the path of the current file.  If the script is run directly (meaning it's the top-level script being executed), the condition evaluates to `true`, and the code block indented below it is executed. However, if the script is included as a module or library in another script, `__FILE__` will have a different value, and the code block will not be executed, preventing unintended behavior.
+ This Ruby code snippet demonstrates a common pattern in Ruby programming: using the `__FILE__` constant to check if the script is being run directly or included as a library. If the script is being run directly, the code block inside the `if` statement will be executed. This is useful for scripts that need to perform some action only when they are run directly, and not when they are required by another script.
+
+For example, if you have a Ruby script called `my_script.rb`, you can use the following code to check if it's being run directly or included as a library:
+```
+if __FILE__ == $0
+  # Code block to be executed only if the script is run directly
+end
+```
+If the script is run directly, the code inside the `if` statement will be executed. If the script is required by another script using the `require` method, the code inside the `if` statement will not be executed.
+
+Note that the `$0` constant is a special variable in Ruby that refers to the name of the current script being run. When a script is run directly, `$0` will have the value of the script's file name, and when it's required by another script, `$0` will have the value of the requiring script's file name.

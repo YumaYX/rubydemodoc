@@ -1,1 +1,8 @@
-This Ruby code snippet demonstrates the use of the `digest/md5` library to calculate the MD5 hash of a string and the MD5 hash of a file.  The first line, `require 'digest/md5'`, imports the necessary library into the current Ruby environment.  Then, `Digest::MD5.hexdigest('ruby')` calculates the MD5 hash of the string "ruby" and returns it as a hexadecimal string, which is then printed to the console.  The second line, `Digest::MD5.file('input/digest/md5sum.rb').to_s`, calculates the MD5 hash of the file named 'input/digest/md5sum.rb'.  The `.to_s` method converts the resulting hash object into a string representation of its hexadecimal value, which is also then printed to the console, displaying the MD5 checksum of the specified file.
+
+This Ruby code snippet demonstrates the usage of the `Digest` module in Ruby to calculate MD5 hashes. The first line requires the `digest/md5` library, which is part of the standard library in Ruby.
+
+The second line uses the `hexdigest` method provided by the `Digest::MD5` class to calculate the MD5 hash of a string. In this case, the string `'ruby'` is passed as an argument to the method. The resulting MD5 hash is returned as a hexadecimal string.
+
+The third line uses the `file` method provided by the `Digest::MD5` class to calculate the MD5 hash of a file. In this case, the file `'input/digest/md5sum.rb'` is passed as an argument to the method. The resulting MD5 hash is returned as a hexadecimal string.
+
+Note that in order to use these methods, you need to have the `digest` library installed on your system. You can install it using the Ruby package manager, such as `gem install digest`.

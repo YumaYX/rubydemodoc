@@ -1,1 +1,6 @@
-This Ruby code snippet demonstrates the use of the `Date` module within the Ruby standard library. Specifically, it includes the `require 'date'` statement to load the `Date` module, which provides functionality for working with dates and times.  The `Date::DAYNAMES` statement then accesses an array containing the names of the days of the week, which is a core component of the `Date` module.  Essentially, this code provides access to the built-in date manipulation capabilities in Ruby.
+ This Ruby code snippet demonstrates how to access the names of days in a week using the `Date` module in Ruby. The `DAYNAMES` constant is an array of strings that contain the names of the days in order, starting with Sunday and ending with Saturday. To access these names, you can use the following syntax:
+```
+require 'date'
+p Date::DAYNAMES # => ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+```
+In this example, the `require` statement is used to load the `Date` module. The `p` method is then used to print out the contents of the `DAYNAMES` constant. The output will be an array containing the names of the days in order.

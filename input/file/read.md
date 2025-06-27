@@ -1,1 +1,5 @@
-This Ruby code snippet demonstrates the use of the `File.read` method to read the entire content of a file. Specifically, it attempts to read the contents of a file located at the path 'input/file/filewr.txt'.  If the file exists and the Ruby interpreter has the necessary permissions to access it, the method will return the file's content as a string. If the file does not exist or there's a permission issue, `File.read` will raise an exception, such as `Errno::ENOENT` (file not found) or `Errno::EACCES` (permission denied). It's crucial to handle potential errors when using `File.read` to prevent unexpected program termination.
+ This Ruby code snippet demonstrates how to read the contents of a file using the `File` class. The method `File.read()` is used to read the entire content of a file as a string, and it takes the path of the file to be read as an argument. In this case, the file path is `'input/file/filewr.txt'`.
+
+To use this code snippet, you will need to create a new Ruby file and replace `'input/file/filewr.txt'` with the path of your own file. For example, if your file is located in the same directory as your Ruby script, you can simply write `File.read('filewr.txt')`.
+
+Note that this code will only work if the file exists and is readable by the current user. If the file does not exist or is not readable, an error will be raised.

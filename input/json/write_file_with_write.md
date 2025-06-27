@@ -1,1 +1,9 @@
-This Ruby code snippet demonstrates how to create a JSON file from a Ruby hash. First, the `require 'json'` statement loads the JSON library, which is essential for working with JSON data in Ruby. Then, a hash named `hash` is initialized with a single key-value pair: `key` is set to 'value'. Finally, the `File.write` method is used to write the JSON representation of this hash to a file named 'input/json/file.json'. The `JSON.dump` method converts the Ruby hash into a JSON string, and `File.write` then writes this string to the specified file, creating or overwriting 'input/json/file.json' with the JSON data.
+ This Ruby code snippet demonstrates how to write a hash to a file in JSON format using the `JSON` module in Ruby.
+
+The first line, `require 'json'`, loads the JSON library into the current script, allowing us to use its functions for working with JSON data.
+
+Next, we define a hash object `hash` with one key-value pair. The key is `:key` and the value is `'value'`.
+
+Then, we use the `File.write()` method to write the contents of the `hash` object to a file named `input/json/file.json`. We use the `JSON.dump()` method to convert the hash object to JSON format before writing it to the file.
+
+Note that the path to the output file is specified as `'input/json/file.json'`, and the method uses the current working directory of the script as the base path for the file name. If you want to specify a different base path or use an absolute path, you can modify the path accordingly.

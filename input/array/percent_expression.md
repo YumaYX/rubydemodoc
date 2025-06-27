@@ -1,1 +1,13 @@
-This Ruby code snippet demonstrates the differences between the `%w`, `%W`, `%i`, and `%I` array literal operators. The `%w` and `%W` operators are used to create arrays from strings, where each string in the argument list becomes an element in the resulting array. The `%w` operator uses double quotes for string delimiters, while `%W` uses single quotes.  The `%i` and `%I` operators similarly create arrays from integers, with `%i` using double quotes for string delimiters and `%I` using single quotes. Essentially, these operators provide a concise and convenient way to initialize arrays with specific values, but they differ in the string delimiters they accept.
+This Ruby code snippet demonstrates the use of interpolation in arrays and hashes. In Ruby, you can include variables inside a string by using the `#{}` notation. For example, if we have a variable `str = "ruby"`, then we can create an array with the elements "a", "b", "c", and "ruby" like this:
+```
+%w(a b c "#{str}")
+=> ["a", "b", "c", "ruby"]
+```
+This creates an array with four elements, where the third element is the value of the variable `str`.
+
+Similarly, we can create a hash with the keys "a", "b", and "c" and the value of the variable `str` like this:
+```
+%i(a b c "#{str}")
+=> {:a=>1, :b=>2, :c=>3, str=>"ruby"}
+```
+This creates a hash with four key-value pairs, where the third key is the value of the variable `str`. Note that the keys in this case are symbols, not strings.

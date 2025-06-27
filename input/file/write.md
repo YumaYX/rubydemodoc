@@ -1,1 +1,4 @@
-This Ruby code snippet demonstrates a simple file writing operation. The `File.write` method is used to create a new file named `filewr.txt` within the `input/file/` directory and writes the string "Hello" into it. This effectively overwrites the file if it already exists, or creates it if it doesn't.
+
+This Ruby code snippet demonstrates how to write data to a file using the `File` class's `write` method in Ruby. The method takes two arguments: the first is the path of the file you want to write to, and the second is the data you want to write to the file. In this case, the code writes the string `'Hello'` to a file called `filewr.txt`, which is located in the `input/file` directory.
+
+Note that if the file does not exist, it will be created. If the file already exists, its contents will be overwritten with the new data. Additionally, you can also use the `File.open` method to open a file for writing and then write to it using the `write` method. This allows you to write to a file in a more structured way and handle errors that may occur during writing.

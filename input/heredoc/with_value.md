@@ -1,1 +1,6 @@
-This Ruby code snippet demonstrates string interpolation within a heredoc. The code initializes a string variable named `value` to the string "ruby".  Then, a heredoc (denoted by `<<~EOL`) is used to create a multi-line string. Inside the heredoc, the value of the `value` variable is embedded directly into the string using the `#{}` interpolation syntax. The `EOL` marker is simply a string literal that marks the end of the heredoc, and it is included as part of the resulting string.  The final result will be the string "ruby".
+
+This Ruby code snippet demonstrates how to use the "<<~" operator to create a heredoc (i.e., a here document) in Ruby. The "<<~" operator is used to specify that the following indented lines should be treated as a heredoc, which allows for more readable and flexible formatting of text.
+
+In this code snippet, we define a variable `value` with the value `'ruby'`, and then use the "<<~" operator to create a heredoc with the same name (`doc`). The heredoc is assigned the value of the indented lines following it, which in this case is just the string `'ruby'`.
+
+Note that the heredoc is defined by indenting the lines below the "<<~" operator. The indentation should be consistent throughout the heredoc, and should not contain any leading or trailing whitespace. Additionally, the heredoc should not be terminated with a line break.
