@@ -5,14 +5,14 @@ require 'json'
 def ollama_request(prompt)
   url = URI.parse('http://localhost:11434/api/generate')
   data = {
-    "model": 'codellama:7b-instruct',
+    "model": 'codellama:13b-instruct',
     "prompt": prompt,
     "stream": false
   }
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = (url.scheme == 'https')
-  http.open_timeout = 5  # 接続タイムアウト（秒）
-  http.read_timeout = 600 # レスポンス読み取りタイムアウト（秒）
+  http.open_timeout = 600  # 接続タイムアウト（秒）
+  http.read_timeout = 60 * 60 * 6 # レスポンス読み取りタイムアウト（秒）
 
   request = Net::HTTP::Post.new(url.path, {
                                   'Content-Type' => 'application/json'
