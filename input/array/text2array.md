@@ -1,5 +1,3 @@
- This Ruby code snippet demonstrates how to convert a string into an array of lines in Ruby. The `<<~TEXT` syntax is used to indicate that the following indented block should be treated as a here document, and the `text` variable is assigned to the indented text block.
+This Ruby code snippet demonstrates how to split a string into individual lines and remove the newline characters using the `String#lines` method, which returns an array of strings where each element represents a line in the original string. The `.map(&:chomp)` method is then used to iterate over the array of strings and apply the `String#chomp` method to each element, which removes any trailing newline characters from the end of the string.
 
-The first line of the code defines a variable called `lines`, which is set to the result of calling the `lines` method on the string `text`. The `lines` method returns an array of lines in the string, each of which is represented as a separate element in the array. The `&:chomp` symbol is used to indicate that the `chomp` method should be called on each line before it is added to the array.
-
-The resulting array `lines` contains three elements, each representing one line of the original text string.
+The resulting array of strings can be accessed using the `lines` variable. For example, you could print out all the lines in the original string by iterating over the `lines` array and printing each element.
