@@ -1,3 +1,1 @@
- This Ruby code snippet demonstrates how to get the previous Monday from a given date. The code first gets the current time using `Time.now`, then calculates the number of seconds since the previous Monday by subtracting the number of seconds in one day multiplied by the weekday difference between the current date and Monday (which is 1).
-
-The resulting integer represents the number of seconds from the previous Monday to the current date, which can be used to create a new `Time` object with the desired date.
+This Ruby code snippet demonstrates how to get the date of this Monday using the `Time` class and its methods. The `Time.now` method returns the current time as a `Time` object, and the `wday` method returns the day of the week as an integer (0 for Sunday, 1 for Monday, etc.). By subtracting the number of days from this Sunday to get to this Monday, we can calculate the date of this Monday. The code then stores this date in a variable called `this_monday`.

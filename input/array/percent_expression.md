@@ -1,5 +1,5 @@
-This Ruby code snippet demonstrates the use of the `%w` and `%W` literals to create an array of strings in Ruby. The difference between these two literals is that `%w` creates an array of strings using single quotes, while `%W` creates an array of strings using double quotes.
+This Ruby code snippet demonstrates the use of the `%w()` and `%W()` methods to create an array of words. The difference between these two methods is that `%w()` returns a word array that is mutable, while `%W()` returns a word array that is immutable.
 
-The `%i` and `%I` literals are similar, but they create arrays of symbols instead of strings. Symbols are unique objects in Ruby that can be used to identify a specific object in the program.
+The `%i()` and `%I()` methods are similar to `%w()` and `%W()`, but they return an array of symbols instead of strings.
 
-Note: The `#{}` syntax is called interpolation and it allows you to insert dynamic values into a string literal. In this case, the variable `str` is interpolated into the string literal using the `#{}` syntax.
+Note: The `#{str}` syntax is used for string interpolation, which allows you to insert the value of `str` into a string literal. In this case, it inserts the word "ruby" into each element of the array.

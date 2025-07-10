@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates how to retrieve an array of all weekday names using the `Date` module. The `DayNames` method returns an array containing all 7 day names in the order specified by `Date#wday`.
+This Ruby code snippet demonstrates how to use the `DATE` module and its `DAYNAMES` method to retrieve an array of the names of days in a week, using the `Date` class. The `DAYNAMES` method returns an array with the names of the days in a week, starting from Sunday.

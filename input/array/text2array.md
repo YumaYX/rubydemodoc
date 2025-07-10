@@ -1,3 +1,4 @@
-This Ruby code snippet demonstrates how to split a string into individual lines and remove the newline characters using the `String#lines` method, which returns an array of strings where each element represents a line in the original string. The `.map(&:chomp)` method is then used to iterate over the array of strings and apply the `String#chomp` method to each element, which removes any trailing newline characters from the end of the string.
 
-The resulting array of strings can be accessed using the `lines` variable. For example, you could print out all the lines in the original string by iterating over the `lines` array and printing each element.
+This Ruby code snippet demonstrates how to split a string into lines and remove the new line characters from each line. The `<<~` operator is used to create a heredoc, which allows us to define a multi-line string as if it were a variable. We then use the `lines` method to get an array of strings, where each string represents a single line in the original string. Finally, we use the `map` method with the `&:chomp` block to remove the new line characters from each string in the array.
+
+Note: The `<<~` operator is used to create a heredoc, which allows us to define a multi-line string as if it were a variable. This is useful for defining long strings that are not suitable for single lines.

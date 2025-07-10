@@ -1,8 +1,7 @@
+This Ruby code snippet demonstrates the use of the MD5 message-digest algorithm to generate a hash value for a given input string or file. The `require` statement loads the `Digest::MD5` module, which provides an interface for generating and verifying MD5 hashes.
 
-This Ruby code snippet demonstrates the usage of the `Digest` module in Ruby to calculate MD5 hashes. The first line requires the `digest/md5` library, which is part of the standard library in Ruby.
+The first line of code generates an MD5 hash for the string `'ruby'` using the `hexdigest` method. The resulting hash is a 32-character hexadecimal string that can be used as a unique identifier for the input string.
 
-The second line uses the `hexdigest` method provided by the `Digest::MD5` class to calculate the MD5 hash of a string. In this case, the string `'ruby'` is passed as an argument to the method. The resulting MD5 hash is returned as a hexadecimal string.
+The second line of code generates an MD5 hash for the file located at `'input/digest/md5sum.rb'`. This file is assumed to exist in the current working directory, and its contents are read into memory before being processed by the MD5 algorithm. The resulting hash is also a 32-character hexadecimal string.
 
-The third line uses the `file` method provided by the `Digest::MD5` class to calculate the MD5 hash of a file. In this case, the file `'input/digest/md5sum.rb'` is passed as an argument to the method. The resulting MD5 hash is returned as a hexadecimal string.
-
-Note that in order to use these methods, you need to have the `digest` library installed on your system. You can install it using the Ruby package manager, such as `gem install digest`.
+In both cases, the generated hash values can be used for comparison or validation purposes, depending on the intended use case. Note that MD5 hashes are not considered cryptographically secure, and should not be used for sensitive data such as passwords or authentication tokens.
