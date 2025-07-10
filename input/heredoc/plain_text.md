@@ -1,15 +1,1 @@
- This Ruby code snippet demonstrates how to use a here document to assign a string value to a variable named `doc`. The here document is denoted by the `<<` and `EOL` markers, which indicate that the text between them should be treated as a single string.
-
-Here is an example of how this code might be used:
-```
-doc = <<~'EOL'
-  This is a string with multiple lines.
-  It can contain anything you want, including special characters like $ or @.
-EOL
-puts doc
-```
-This code would output the following string to the console:
-```
-This is a string with multiple lines.
-It can contain anything you want, including special characters like $ or @.
-```
+This Ruby code snippet demonstrates the use of the heredoc syntax (also known as the "triple-quoted" syntax) to create a multi-line string. The `<<~'EOL'` part is called the delimiter, and it tells Ruby that the text that follows should be treated as a single string until the next occurrence of `EOL`. In this case, the string is just a single word "string", but in more complex examples, it could be multiple lines of text. Note that the single quotes around 'EOL' are optional and can be omitted if desired.

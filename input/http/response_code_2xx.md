@@ -1,8 +1,3 @@
+This Ruby code snippet demonstrates a method `rc2xx?` that takes a string argument representing a URL and returns true if the server responds with an HTTP status code between 200-299, and false otherwise. The method first parses the URL using the `URI.parse` method, then creates a new `Net::HTTP` instance for the host and port of the URL, sets the `use_ssl` property if necessary based on whether the URL scheme is "https", and finally makes an HTTP GET request to the parsed URL path using the `Net::HTTP::Get` class. Finally, it checks the response code returned by the server and returns true if it falls in the range of 200-299, and false otherwise.
 
-This Ruby code snippet demonstrates a method called `rc2xx?` that checks whether the HTTP status code of a given URL is within the range of 200-299, which indicates success. The method takes a string parameter representing the URL and returns a boolean value indicating whether the request was successful or not.
-
-The method first parses the input URL using the `URI` class to extract the hostname, port number, and scheme (HTTP or HTTPS). It then creates an instance of the `Net::HTTP` class and sets the `use_ssl` property to true if the scheme is "https".
-
-The method then constructs a `Get` request object using the `Net::HTTP::Get.new` method and sends it to the server using the `request` method. The response from the server is then captured in the `response` variable.
-
-Finally, the status code of the response is extracted using the `code` method and converted to an integer value using the `to_i` method. The method returns true if the status code is within the range of 200-299, and false otherwise.
+The method is then called with a sample URL "https://yumayx.github.io/" to demonstrate its functionality.

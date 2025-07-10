@@ -1,11 +1,6 @@
- This Ruby code snippet demonstrates the use of the `product` method in combination with other methods to create a collection of all possible combinations of elements from three arrays. The `product` method takes multiple arrays as arguments and returns a new array that contains all possible combinations of elements from the input arrays.
 
-The first line of code, `a = ('a'..'c').to_a`, creates an array containing the letters 'a', 'b', and 'c'. The second line, `b = 2.times.to_a`, creates an array containing two elements, 0 and 1. The third line, `c = [{}]`, creates an empty hash.
-
-The final line of code, `a.product(b, c)`, uses the `product` method to create a new array that contains all possible combinations of elements from `a`, `b`, and `c`. This will result in a new array with 6 elements, each consisting of a combination of an element from `a`, `b`, and `c`.
-
-For example, if the input arrays are `['a', 'b', 'c']`, `[0, 1]`, and `{}`, then the output array would contain the following combinations:
+This Ruby code snippet demonstrates how to use the `product` method in a more advanced way by chaining multiple enumerable objects together using parentheses and commas. The `product` method returns all possible combinations of elements from multiple collections passed as arguments. In this example, we are passing three collections: `'a'..'c'` (which is an inclusive range of characters), `2.times` (which is an infinite enumerable that generates the number 0, then 1, then 0 again), and `[{}]` (which is a single-element array containing an empty hash). The resulting combinations are:
+```ruby
+[["a", 0, {}], ["b", 0, {}], ["c", 0, {}], ["a", 1, {}], ["b", 1, {}], ["c", 1, {}]]
 ```
-[['a', 0, {}], ['a', 1, {}], ['b', 0, {}], ['b', 1, {}], ['c', 0, {}], ['c', 1, {}]]
-```
-Note that the output array will contain a combination of each element from `a`, `b`, and `c`, in all possible orders.
+Note that the `product` method returns an array of arrays, where each subarray represents a combination of elements from the input collections.
