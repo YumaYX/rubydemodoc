@@ -1,32 +1,5 @@
-This Ruby code snippet demonstrates the use of the `CSV` class to read a CSV file with a specific encoding, and then converts the data into an array of hashes. It also defines a custom class called `Family` that has an attribute `children`, which is an array of strings representing child names. The code iterates over the hashes in the `data` array and creates instances of the `Family` class for each parent name found in the data. It then adds the child names to the corresponding family instance using the `children` attribute. Finally, it returns the array of `Family` instances.
+This Ruby code snippet demonstrates how to group data based on a common key, in this case the "parent" and "child" relationships in a CSV file. The code first reads the CSV file using the `CSV` class, specifying that the encoding is "BOM|UTF-8". It then maps each hash in the resulting array of hashes to a new `Family` object, which has an `attr_accessor` for the children field.
 
-Here is an example of how this code might be used:
-```
-input_file = "input/text/group.csv"
-encoding = "BOM|UTF-8"
-headers = true
-data = CSV.read(input_file, encoding: encoding, headers: headers).map(&:to_h)
+The rest of the code iterates over each hash in the data array and checks if the parent field is nil. If it is not nil, it creates a new Family object with that parent, and adds the child to its children array. Otherwise, it adds the child to the last Family object's children array.
 
-families = []
-data.each do |hash|
-  parent = hash["parent"]
-  if parent.nil?
-    families.last.children << hash["child"]
-  else
-    families << Family.new(parent)
-    families.last.children << hash["child"]
-  end
-end
-
-puts families
-```
-This code reads a CSV file called "group.csv" with the specified encoding and headers, converts the data into an array of hashes using the `map` method, and then iterates over the hashes and creates instances of the `Family` class for each parent name found in the data. It adds the child names to the corresponding family instance using the `children` attribute, and finally returns the array of `Family` instances.
-
-The output of this code would be an array of `Family` instances, where each instance has a `parent` attribute and a `children` attribute containing an array of strings representing the child names. For example:
-```
-families = [
-  { parent: "John", children: ["Alice", "Bob"] },
-  { parent: "Jane", children: ["Charlie", "David"] }
-]
-```
-This code demonstrates how to use the `CSV` class to read a CSV file with a specific encoding and headers, and then convert the data into an array of hashes. It also shows how to define a custom class called `Family` that has an attribute `children`, which is an array of strings representing child names. The code uses this class to create instances of `Family` for each parent name found in the data, and adds the child names to the corresponding family instance using the `children` attribute.
+Finally, the code returns an array of all the families created, which can be used for further processing or analysis.
