@@ -1,5 +1,3 @@
-This Ruby code snippet demonstrates how to get the absolute path of the current directory. The `File` class provides a method called `__dir__` that returns the absolute path of the current directory.
-```
-current_directory = File.__dir__()
-puts "Current directory: #{current_directory}"
-```
+This Ruby code snippet demonstrates how to read and write data from/to a file using the `File` class. The `open` method is used to open a file, and the `read` method is used to read the contents of the file into a string variable. The `write` method is then used to write the contents of the string variable back to the file.
+
+Note: The code snippet assumes that there is already a file named "example.txt" in the current working directory, and that it contains some text data. If the file does not exist or if there are any errors while reading/writing from/to the file, an exception will be raised.

@@ -1,4 +1,2 @@
 
-This Ruby code snippet demonstrates how to deserialize a serialized object using the `Marshal` class in Ruby. The `File.read` method is used to read the contents of a file, which contains the serialized data for an object. The `Marshal.load` method is then used to load the serialized data and create a new object from it.
-
-Note that this code assumes that the serialized data is stored in a file named "person.dat" in the "input/serialization" directory.
+This Ruby code snippet demonstrates how to deserialize a serialized object in Ruby using the `Marshal` class. The first line reads the serialized object from a file and stores it in the `serialized_person` variable. The second line uses the `Marshal.load` method to deserialize the object, which returns the original object that was serialized. Note that the `serialized_person` variable must contain the data of the serialized object, which is stored in a file called 'input/serialization/person.dat' in this example.
