@@ -1,11 +1,2 @@
- This Ruby code snippet demonstrates how to read and parse JSON data from a file using the `JSON` module in Ruby. The `JSON.parse()` method is used to parse the JSON data, and the `File.read()` method is used to read the contents of the input file. The resulting object is then returned as a Hash.
 
-Here's an example of how you could use this code:
-```
-file = File.open('input/json/file.json')
-data = JSON.parse(file)
-puts data # => {"name": "John Doe", "age": 30}
-```
-In this example, the `File.read()` method is used to read the contents of the input file, which contains a JSON object with two key-value pairs. The `JSON.parse()` method is then used to parse the JSON data and return it as a Hash. Finally, the resulting object is printed using the `puts` method.
-
-Note that this code assumes that the input file exists and is located in the `input/json/` directory. You may need to modify the path to match your specific setup.
+This Ruby code snippet demonstrates how to read and parse a JSON file using the `JSON` class provided by the `json` gem. The code first requires the `json` gem, which provides the `JSON` class for parsing JSON data. Then it uses the `File.read` method to read the contents of a JSON file located at `input/json/file.json`. Finally, it calls the `parse` method on the `JSON` class to parse the JSON data and returns the parsed data in Ruby's hash format.
