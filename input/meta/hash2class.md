@@ -1,5 +1,5 @@
-This Ruby code snippet demonstrates the use of Class.new to create a dynamic class based on a given hash object. The create_dynamic_class method takes a hash as an argument and returns a new class that has accessor methods for each key in the hash. The class also includes an initialize method that sets instance variables for each key-value pair in the hash.
+This Ruby code snippet demonstrates how to create a dynamic class in Ruby. The `create_dynamic_class` method takes a hash of attributes as an argument and returns a new class that has accessors for each key in the hash. The `initialize` method is also defined, which sets the instance variables of the object based on the values in the hash.
 
-The code first defines a hash object named data with three key-value pairs: name, age, and city. It then calls the create_dynamic_class method on the data hash to create a new dynamic class. The resulting class has accessor methods for name, age, and city, and an initialize method that sets instance variables for each key-value pair in the hash.
+For example, when you call `create_dynamic_class(data)`, it will create a new class with attributes `name`, `age`, and `city`. You can then create an instance of this class using `obj = kls.new` and access the attributes using `obj.name`, `obj.age`, etc.
 
-The code then creates an instance of the dynamically created class using the new keyword. It then prints the values of the name, age, and city attributes of the object to the console.
+Note that this is a contrived example, but it demonstrates how to create a dynamic class in Ruby with accessors for each key in a hash.
