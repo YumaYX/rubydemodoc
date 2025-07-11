@@ -1,10 +1,8 @@
- This Ruby code snippet demonstrates how to iterate over a collection of hashes and output the values for each key in a tab-delimited format. The first line of the output is the header row, which includes the keys for the hashes in the collection. Each subsequent line represents an entry in the collection, with the values for each key being delimited by tabs.
 
-Here's a breakdown of the code:
+This Ruby code snippet demonstrates the use of the `each` method to iterate over an array of hashes. The code first retrieves the keys of the first hash in the array using the `first` method, and then joins them with tabs using the `join` method.
 
-1. The data variable is initialized to an array of two hashes. Each hash contains three keys: id, val1, and val2.
-2. The first line of output is generated using the `keys` method on the first entry in the collection, which returns an array of strings containing the keys for that hash. The `join` method is used to join these keys with tabs between them, and the result is printed to the console.
-3. The `each` method is used to iterate over each entry in the collection. For each entry, the values for each key are extracted using the [] syntax.
-4. The maximum length of the val1 and val2 arrays is determined by finding the largest value between the two lengths. This ensures that the output lines will have the same number of tabs.
-5. A loop is used to iterate over the maximum length of the val1 and val2 arrays, starting from zero. For each iteration, the id, val1, and val2 values are extracted from the current entry in the collection. If a value is nil, an empty string is used as a placeholder.
-6. The id, val1, and val2 values are joined with tabs between them using the `join` method, and then printed to the console.
+The next step is to iterate over each hash in the array using the `each` method, which passes a block with the variable `entry` bound to each element in the array. Inside the block, the code retrieves the values of the `:id`, `:val1`, and `:val2` keys from the current entry using the `[]` method, and then computes the maximum length of the arrays for `:val1` and `:val2`.
+
+The code then iterates over each element in the array using a loop that runs up to the maximum length. Inside the loop, it retrieves the value of the `:id` key from the current entry if `i` is 0 (the first iteration), or an empty string otherwise. It also retrieves the value of the `:val1` and `:val2` keys using the same method as before, but only if the element exists in the array at the current index.
+
+Finally, it joins the values with tabs and outputs them to the console using `puts`. This code demonstrates how to iterate over an array of hashes and retrieve values from each entry based on specific keys.
