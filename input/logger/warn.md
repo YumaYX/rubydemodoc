@@ -1,7 +1,5 @@
-This Ruby code snippet demonstrates how to set the logging level of a logger object in Ruby. The `Logger` class provides several levels of logging, including `DEBUG`, `INFO`, `WARN`, and `ERROR`. By default, the logging level is set to `INFO`.
+This Ruby code snippet demonstrates how to use the `Logger` class in Ruby to log messages at different levels of severity. The code first creates a new `Logger` instance that outputs logs to `STDOUT`. It then sets the logging level to `WARN`, which means that only warnings and errors will be outputted. The code also demonstrates how to use the `warn`, `info`, and `debug` methods to log messages at different levels of severity.
 
-In this code snippet, we first create a new instance of the `Logger` class and assign it to a variable named `logger`. We then set the logging level of the logger object to `WARN` using the `level=` method. This means that only messages with a severity level of WARN or higher will be logged.
+The `warn` method is used to log a warning message, while the `info` method is used to log an informational message. The `debug` method is used to log a debug message.
 
-Next, we output three log messages using the `warn`, `info`, and `debug` methods of the `Logger` class. The first message is logged at the `WARN` level, so it should be displayed because the logging level is set to `WARN`. The second message is logged at the `INFO` level, but since the logging level is only set to `WARN`, it will not be displayed. The third message is logged at the `DEBUG` level, but since the logging level is only set to `WARN`, it will also not be displayed.
-
-Overall, this code snippet demonstrates how to set the logging level of a logger object in Ruby and how to use different methods to log messages with different severity levels.
+Note that the logging level can be changed dynamically by assigning a new value to the `level` attribute of the `Logger` instance. This allows for fine-grained control over the type of messages that are outputted.
