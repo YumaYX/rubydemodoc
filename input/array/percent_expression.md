@@ -1,5 +1,22 @@
-This Ruby code snippet demonstrates the use of the `%w()` and `%W()` methods to create an array of words. The difference between these two methods is that `%w()` returns a word array that is mutable, while `%W()` returns a word array that is immutable.
+This Ruby code snippet demonstrates how different array-like literal notations (`%w`, `%W`, `%i`, and `%I`) function in Ruby, particularly regarding string interpolation and symbol creation.
 
-The `%i()` and `%I()` methods are similar to `%w()` and `%W()`, but they return an array of symbols instead of strings.
+### `%w(a b c "#{str}")`
 
-Note: The `#{str}` syntax is used for string interpolation, which allows you to insert the value of `str` into a string literal. In this case, it inserts the word "ruby" into each element of the array.
+Creates an array of strings **without** interpolation.
+**Result:** `["a", "b", "c", "\"#{str}\""]`
+
+### `%W(a b c "#{str}")`
+
+Creates an array of strings **with** interpolation.
+**Result:** `["a", "b", "c", "ruby"]`
+
+### `%i(a b c "#{str}")`
+
+Creates an array of symbols **without** interpolation.
+**Result:** `[:a, :b, :c, :"\"#{str}\""]`
+
+### `%I(a b c "#{str}")`
+
+Creates an array of symbols **with** interpolation.
+**Result:** `[:a, :b, :c, :"ruby"]`
+
