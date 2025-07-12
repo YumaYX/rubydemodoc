@@ -1,22 +1,3 @@
-This Ruby code snippet demonstrates how different array-like literal notations (`%w`, `%W`, `%i`, and `%I`) function in Ruby, particularly regarding string interpolation and symbol creation.
+This Ruby code snippet demonstrates the use of interpolation in arrays. The `%w` and `%W` methods create an array of strings, with each element separated by a space. The `%i` and `%I` methods create an array of symbols, with each element separated by a space. The difference between `%w` and `%W` is that `%W` uses double quotes while `%w` uses single quotes to delimit the elements. Similarly, `%i` and `%I` use single quotes or double quotes to delimit the elements, respectively.
 
-### %w(a b c "#{str}")
-
-Creates an array of strings **without** interpolation.
-**Result:** `["a", "b", "c", "\"#{str}\""]`
-
-### %W(a b c "#{str}")
-
-Creates an array of strings **with** interpolation.
-**Result:** `["a", "b", "c", "ruby"]`
-
-### %i(a b c "#{str}")
-
-Creates an array of symbols **without** interpolation.
-**Result:** `[:a, :b, :c, :"\"#{str}\""]`
-
-### %I(a b c "#{str}")
-
-Creates an array of symbols **with** interpolation.
-**Result:** `[:a, :b, :c, :"ruby"]`
-
+The code snippet also shows how interpolation can be used in arrays to create dynamic values. The `#{str}` expression is interpolated into the array, resulting in a different value for each element depending on the value of `str`.
