@@ -1,6 +1,10 @@
+This Ruby code snippet demonstrates the use of array creation, the `to_a` method, the `times` method, and the `product` method to generate and manipulate arrays.
 
-This Ruby code snippet demonstrates how to use the `product` method in a more advanced way by chaining multiple enumerable objects together using parentheses and commas. The `product` method returns all possible combinations of elements from multiple collections passed as arguments. In this example, we are passing three collections: `'a'..'c'` (which is an inclusive range of characters), `2.times` (which is an infinite enumerable that generates the number 0, then 1, then 0 again), and `[{}]` (which is a single-element array containing an empty hash). The resulting combinations are:
-```ruby
-[["a", 0, {}], ["b", 0, {}], ["c", 0, {}], ["a", 1, {}], ["b", 1, {}], ["c", 1, {}]]
-```
-Note that the `product` method returns an array of arrays, where each subarray represents a combination of elements from the input collections.
+First, the code creates an array `a` containing the characters 'a', 'b', and 'c' using the range operator `'a'..'c'` and converting it to an array with `to_a`. 
+
+Next, it creates an array `b` containing two elements, the number 2, using `2.times.to_a`.
+
+Then, it creates an array `c` containing an empty hash `{}`.
+
+Finally, the code uses the `product` method to generate the Cartesian product of the three arrays `a`, `b`, and `c`. The `product` method returns a new array containing all possible combinations of elements from the input arrays. The output of this operation will be an array of arrays, where each inner array represents a combination of an element from `a`, an element from `b`, and an element from `c`.
+

@@ -1,1 +1,3 @@
-This Ruby code snippet demonstrates how to write to a file using the `File.write` method. The first argument is the path of the file to be written, and the second argument is the string to be written to the file. In this case, the file path is `'input/file/filewr.txt'`, and the string being written is `'Hello'`.
+This Ruby code snippet demonstrates writing the string "Hello" to a file named "filewr.txt" located in the "input/file" directory. The `File.write` method takes two arguments: the path to the file and the string to be written. If the file does not exist, it will be created. If the file exists, its contents will be overwritten with the new string.
+
+

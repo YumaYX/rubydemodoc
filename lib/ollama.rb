@@ -24,7 +24,7 @@ end
 
 def describe_codes(file_name)
   content = File.read(file_name)
-  content = "Write about the following ruby codes in English using markdown format, briefly. Just the answer. Please omit backticks. Add a note to answer in complete sentences. Start your response with 'This Ruby code snippet demonstrates'.\n---\n#{content}"
+  content = "Write about the following ruby codes in English using markdown format. Just the answer. Please omit backticks. Add a note to answer in complete sentences. Start your response with 'This Ruby code snippet demonstrates'.\n---\n#{content}"
+  return `source venv/bin/activate && python3.13 llm/ask.py "#{content}"`
   ollama_request(content)
 end
-

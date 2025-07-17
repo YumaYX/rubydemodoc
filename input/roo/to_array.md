@@ -1,3 +1,5 @@
-This Ruby code snippet demonstrates how to read an Excel file using the `roo` gem. The code first requires the `roo` gem and then sets up a new instance of `Roo::Excelx`, which is used to open the Excel file at `'input/roo/book.xlsx'`. The code then loops through each row in the sheet named `'mysheet'` using the `each` method, and appends each row to a two-dimensional array called `two_dimensional`. Finally, the code returns the `two_dimensional` array.
+This Ruby code snippet demonstrates how to read data from an Excel file using the `roo` gem and store it in a two-dimensional array. First, it requires the `roo` library, which provides functionality for reading and writing Excel files. Then, it creates a new `Roo::Excels` object, specifying the path to the Excel file ('input/roo/book.xlsx'). Next, it accesses a specific sheet within the Excel file, named 'mysheet'. The code then iterates through each row in the sheet and appends the row to the `two_dimensional` array. Finally, it prints the `two_dimensional` array, which now contains the data from the Excel sheet represented as a 2D array of arrays.
 
-Note: This code assumes that you have already installed the `roo` gem using the command `gem install roo` in your terminal or command prompt.
+
+
+

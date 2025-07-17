@@ -1,1 +1,3 @@
-This Ruby code snippet demonstrates the use of heredocs (triple-quoted strings) in Ruby. The `<<~EOL` construct is used to define a heredoc, which is a string that spans multiple lines and can contain arbitrary text. The `#{value}` syntax is used to interpolate the value of the `value` variable into the heredoc. The resulting `doc` variable will be assigned a string with the value of `ruby`.
+This Ruby code snippet demonstrates string interpolation and heredoc syntax. The code assigns the string 'ruby' to the variable `value`. Then, it uses a heredoc to define a string variable named `doc`. Inside the heredoc, it inserts the value of the `value` variable using string interpolation, effectively creating a string that contains the word "ruby". The `<<~EOL` syntax indicates a heredoc, and `EOL` is the delimiter. The content between the `<<~EOL` and the closing `EOL` is treated as a single string.
+
+

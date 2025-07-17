@@ -1,4 +1,5 @@
+This Ruby code snippet demonstrates how to process a multi-line string in Ruby. The code first defines a string variable named `text` using a heredoc, which allows for a multi-line string definition. Then, it splits the `text` string into individual lines using the `lines` method. Finally, it uses the `map` method to iterate over each line and apply the `chomp` method to remove any trailing newline characters. The result is stored in a new array called `lines`, where each element is a line from the original string with the newline characters removed.
 
-This Ruby code snippet demonstrates how to split a string into lines and remove the new line characters from each line. The `<<~` operator is used to create a heredoc, which allows us to define a multi-line string as if it were a variable. We then use the `lines` method to get an array of strings, where each string represents a single line in the original string. Finally, we use the `map` method with the `&:chomp` block to remove the new line characters from each string in the array.
 
-Note: The `<<~` operator is used to create a heredoc, which allows us to define a multi-line string as if it were a variable. This is useful for defining long strings that are not suitable for single lines.
+
+

@@ -1,1 +1,3 @@
-This Ruby code snippet demonstrates how to read a file using the `File` class in Ruby. The method `read` is used to read the contents of the file and return it as a string. The argument passed to the `read` method is the path to the file that needs to be read. In this example, the file "input/file/filewr.txt" is being read.
+This Ruby code snippet demonstrates reading the entire content of a file named "filewr.txt" located within the "input/file" directory. The `File.read()` method is used to read the specified file and return its content as a single string. This string can then be processed or used as needed within the program.
+
+

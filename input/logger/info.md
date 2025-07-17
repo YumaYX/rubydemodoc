@@ -1,6 +1,4 @@
-This Ruby code snippet demonstrates the use of the `Logger` class from the standard library in Ruby to log messages with different levels (error, warn, info, debug). The `require 'logger'` statement loads the Logger module into the current context.
-The next line creates a new instance of the `Logger` class and sets it to write to the `STDOUT`.
-The `puts "Level INFO"` line outputs the level that will be used for logging.
-The `logger.level = Logger::INFO` line changes the level from which logs are written to the logger object. In this case, only messages with a level of `Logger::INFO` or higher (warn and error) will be output.
-The next two lines demonstrate the use of different methods for logging messages: `logger.warn("Nothing to do!")` outputs a warning message, while `logger.info("Program started")` outputs an informational message. The last line, `logger.debug("Created logger")`, does not output anything because its level is lower than the current level set in the previous line (INFO).
-By setting different levels for logging messages, you can control the verbosity of your application's logs and focus on the most important information.
+This Ruby code snippet demonstrates how to set up a logger in Ruby and then print the current log level to the standard output.
+
+First, the code requires the `logger` module, which provides the functionality for logging messages. Then, it creates a new logger instance, configuring it to output log messages to the standard output (STDOU).  After that, it prints the current log level using the `Level` constant, which indicates the severity of the messages that will be logged.  The `Level` constant is typically set to a value like `INFO`, `DEBUG`, `WARN`, `ERROR`, or `FATAL`, determining the minimum severity of messages that will be recorded.
+

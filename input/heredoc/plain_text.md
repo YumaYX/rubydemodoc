@@ -1,1 +1,3 @@
-This Ruby code snippet demonstrates the use of the heredoc syntax (also known as the "triple-quoted" syntax) to create a multi-line string. The `<<~'EOL'` part is called the delimiter, and it tells Ruby that the text that follows should be treated as a single string until the next occurrence of `EOL`. In this case, the string is just a single word "string", but in more complex examples, it could be multiple lines of text. Note that the single quotes around 'EOL' are optional and can be omitted if desired.
+This Ruby code snippet demonstrates how to assign a string to a variable named `doc` using a heredoc. A heredoc allows you to define multi-line strings in a readable way. In this case, the string "string" is assigned to the variable `doc`, which is then enclosed within the heredoc delimiters (`<<~'EOL'` and `EOL`). The `EOL` marker indicates the end of the string definition.
+
+
