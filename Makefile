@@ -4,6 +4,9 @@ default:
 delmd:
 	find input -name "*.md" | xargs rm -fv
 
+md: delmd
+	rake
+
 delmdempty:
 	find input -name "*.md" -empty | xargs rm -fv
 
