@@ -1,3 +1,1 @@
-This Ruby code snippet demonstrates how to assign a string to a variable named `doc` using a heredoc. A heredoc allows you to define multi-line strings in a readable way. In this case, the string "string" is assigned to the variable `doc`, which is then enclosed within the heredoc delimiters (`<<~'EOL'` and `EOL`). The `EOL` marker indicates the end of the string definition.
-
-
+This Ruby code snippet demonstrates a simple string literal. It defines a string variable named `string` that contains the text "string". The `<<~'EOL'` syntax is a shorthand way to define a multiline string, making it easier to include newline characters within the string itself.

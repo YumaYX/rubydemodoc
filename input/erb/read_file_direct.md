@@ -1,5 +1,1 @@
-This Ruby code snippet demonstrates the use of the `erb` library to render an HTML template. The code first requires the `erb` library, which is used for executing ERB (Embedded Ruby) templates. Then, it reads the content of the file 'input/erb/file.html.erb' and passes it to the `Erb.new` constructor.  The `Erb.new` method creates a new ERB object, and the `result` method executes the template, using the current binding as the context. The result of the template rendering is then implicitly returned by the `result` method. In essence, this code reads an ERB template file and generates HTML output by evaluating the Ruby code embedded within the template.
-
-
-
-
+This Ruby code snippet demonstrates the use of the ERB (Embedded Ruby) class to process a template file. Specifically, it reads the content of the file `input/erb/file.html.erb` using `File.read`. Then, it initializes an ERB object with the read content. Finally, it calls the `result` method on the ERB object, passing the `binding` variable. The `binding` variable provides access to the current scope (the `binding`) where the code is executed. The `result` method then evaluates the ERB template, substituting any Ruby expressions with their values, and returns the final result, which is likely the rendered HTML content.

@@ -1,5 +1,1 @@
-This Ruby code snippet demonstrates how to fetch data from a JSON API and parse the response. First, it requires the `net/http` and `json` libraries, which are necessary for making HTTP requests and parsing JSON data, respectively. Then, it defines a URL to the OpenBD API using a specific ISBN.  The URL is converted into a URI object.  Next, it uses `Net::HTTP.get` to send a GET request to the specified URL and retrieves the response. Finally, it uses `JSON.parse` to parse the JSON response string into a Ruby hash or array, which can then be accessed and used in the program.
-
-
-
-
+This Ruby code snippet demonstrates fetching data from a JSON API endpoint and parsing the response. It utilizes the `net/http` library to make an HTTP GET request to the provided URL, which is "https://api.openbd.jp/v1/get?isbn=9784791765553". The retrieved response, which is assumed to be a JSON string, is then parsed using the `JSON.parse` method, transforming it into a Ruby data structure for further processing.

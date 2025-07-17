@@ -1,11 +1,1 @@
-This Ruby code snippet demonstrates how to calculate the date of the previous Monday. 
-
-First, it gets the current date and time using `Time.now` and stores it in the variable `today`. 
-Then, it calculates the time difference between today and the previous Monday. It subtracts the number of days from today to the previous Monday, which is calculated as `today.wday - 1`, multiplied by the number of seconds in a day (24 hours * 60 minutes * 60 seconds). 
-Finally, it stores the calculated time difference in the variable `this_monday`. 
-
-In essence, the code determines the date of the Monday that occurred before the current day.
-
-
-
-
+This Ruby code snippet demonstrates the use of the `$PID`, `$CHILD_STATUS`, and `$ARGV` variables. The `$PID` variable represents the process ID of the current Ruby process, and it's used to format a string. The `$CHILD_STATUS` variable, although not directly used in the provided examples, is related to the status of child processes and is associated with the `$CHILD_STATUS` variable. Finally, the `$ARGV` variable is an array containing command-line arguments passed to the Ruby script, such as "31" and "/home/hoge/fuga.txt".

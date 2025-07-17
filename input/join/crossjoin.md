@@ -1,10 +1,2 @@
-This Ruby code snippet demonstrates the use of array creation, the `to_a` method, the `times` method, and the `product` method to generate and manipulate arrays.
-
-First, the code creates an array `a` containing the characters 'a', 'b', and 'c' using the range operator `'a'..'c'` and converting it to an array with `to_a`. 
-
-Next, it creates an array `b` containing two elements, the number 2, using `2.times.to_a`.
-
-Then, it creates an array `c` containing an empty hash `{}`.
-
-Finally, the code uses the `product` method to generate the Cartesian product of the three arrays `a`, `b`, and `c`. The `product` method returns a new array containing all possible combinations of elements from the input arrays. The output of this operation will be an array of arrays, where each inner array represents a combination of an element from `a`, an element from `b`, and an element from `c`.
+This Ruby code snippet demonstrates the use of the `product` method to generate all possible combinations of elements from three different arrays: `a`, `b`, and `c`. The array `a` contains the elements ['a', 'b', 'c'], array `b` contains the numbers [0, 1, 2] and array `c` contains a list of empty hash. The `product` method will iterate through each element of `a` and, for each of those elements, iterate through each element of `b` and `c`, creating all possible tuples.  For example, the first element of `a` ('a') will be combined with each element of `b` and `c`, resulting in the following tuples: `['a', 0], ['a', 1], ['a', 2]`.  The code then creates a nested structure representing all these combinations.
 

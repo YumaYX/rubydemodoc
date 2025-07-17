@@ -1,5 +1,2 @@
-This Ruby code snippet demonstrates RSA encryption and decryption. First, it generates a new RSA key pair with a 2048-bit key length, consisting of a private key and a public key. Then, it defines a secret string, "Ruby". The public key is used to encrypt the secret string, resulting in encrypted data. Finally, the private key decrypts the encrypted data, recovering the original secret string. In essence, the code showcases a basic RSA encryption and decryption process using the `openssl` library.
-
-
-
+This Ruby code snippet demonstrates how to use the OpenSSL library to generate an RSA key pair, encrypt a string, and then decrypt it back to its original form. First, the code generates a new RSA private key with a key size of 2048 bits using `OpenSSL::PKey::RSA.generate(2048)`. Then, it extracts the corresponding public key from the private key using `rsa_private.public_key`. A string "Ruby" is encrypted using the public key's `public_encrypt` method. Finally, the encrypted data is decrypted back to its original form using the private key's `private_decrypt` method.
 

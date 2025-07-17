@@ -1,5 +1,2 @@
-This Ruby code snippet demonstrates reading lines from a file, removing trailing whitespace, and then processing those lines. The `File.readlines('input/file/file.txt')` part reads all lines from the file located at the specified path ('input/file/file.txt') and returns them as an array of strings, where each string includes the newline character at the end. The `.map(&:chomp)` part then iterates over each string in the array and calls the `chomp` method on it. The `chomp` method removes any trailing whitespace, including the newline character, from the end of each string. Therefore, the entire code snippet reads the lines from the file, removes the trailing newline characters, and returns a new array containing the processed lines.
-
-
-
+This Ruby code snippet demonstrates reading all lines from a file named 'input/file/file.txt', removing trailing newline characters from each line using the `chomp` method, and then returning a new array containing the processed lines. Specifically, the `File.readlines` method reads the file line by line, and `map(&:chomp)` applies the `chomp` method to each element of the resulting array, effectively removing the newline character ('\n') from the end of each line. The output is a new array where each string element does not contain the newline character.
 
