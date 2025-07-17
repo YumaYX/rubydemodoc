@@ -1,1 +1,2 @@
-This Ruby code snippet demonstrates how to create and modify a hash using the `+` operator. The hash is initialized with a default value of 0, and then the value for the key 'key' is incremented by 1. The result of this operation will be a hash with the key 'key' set to 1.
+This Ruby code snippet demonstrates how to use a hash in Ruby. Specifically, it initializes a hash named `hash` with a default value of 0 for all keys. Then, it accesses the key 'key' in the hash and increments its value by 1, effectively counting occurrences of the key.
+

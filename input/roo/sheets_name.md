@@ -1,1 +1,2 @@
-This Ruby code snippet demonstrates how to read an Excel file using the Roo gem. The `Roo::Excelx` class is used to open a spreadsheet in Excel 2007+ format ('.xlsx'). The `sheets` method returns an array of sheet names.
+This Ruby code snippet demonstrates how to use the `roo` library to interact with an Excel spreadsheet. Specifically, it creates an instance of the `Roo::Excelx` class, passing the file path 'input/roo/book.xlsx' to initialize it. Then, it accesses the `sheets` method of the `xlsx` object, which likely returns a list or array of all sheet names within the specified Excel file. This allows you to work with the data contained in the spreadsheet, such as reading it into arrays or manipulating the sheet names.
+

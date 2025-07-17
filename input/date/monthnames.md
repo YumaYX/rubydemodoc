@@ -1,1 +1,2 @@
-This Ruby code snippet demonstrates how to access an array of month names using the Date class. The `MONTHNAMES` constant is used to access the array of 12 months, and it returns an array with the month names in English.
+This Ruby code snippet demonstrates the use of the `Date::MONTHNAMES` constant, which provides an array of month names in English. The `Date` module in Ruby provides a way to work with dates and times, and `Date::MONTHNAMES` is a helpful constant for accessing the names of the months in a standard format. It allows you to easily retrieve the names of the months for use in various date-related applications.
+

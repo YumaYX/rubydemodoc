@@ -1,1 +1,2 @@
-This Ruby code snippet demonstrates how to read input from the standard input stream (stdin) using the `$stdin.read` method. The `read` method returns a string containing all of the data that has been typed into the terminal so far.
+This Ruby code snippet demonstrates reading from standard input. The `stdin.read` method in Ruby is used to read the entire contents of the standard input stream and return it as a string. This allows the program to receive input from the user or other sources and process it.
+

@@ -2,3 +2,8 @@ Gemfile.lock
 *.DS_Store
 *.*.mdx
 nohup.out
+
+venv/
+docs/
+doctree/
+faiss_index/

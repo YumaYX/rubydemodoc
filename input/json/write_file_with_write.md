@@ -1,2 +1,1 @@
-
-This Ruby code snippet demonstrates how to write a hash object as JSON data to a file using the `JSON` module in Ruby. The hash is first converted into JSON format using the `JSON.dump()` method, and then written to a file named 'input/json/file.json' using the `File.write()` method.
+This Ruby code snippet demonstrates how to serialize a Ruby hash into a JSON string and write it to a file. Specifically, the code utilizes the `JSON` library to convert the hash `{:key => 'value'}` into a JSON format and then saves it into a file named "input/json/file.json". The `JSON.dump` method is used to perform this serialization process, resulting in a JSON string representation of the hash being written to the specified file.

@@ -1,1 +1,2 @@
-This Ruby code snippet demonstrates how to use the `DATE` module and its `DAYNAMES` method to retrieve an array of the names of days in a week, using the `Date` class. The `DAYNAMES` method returns an array with the names of the days in a week, starting from Sunday.
+This Ruby code snippet demonstrates the `Date::DAYNAMES` module, which provides an array of the days of the week in English. The `Date::DAYNAMES` module is part of the Ruby `Date` library and allows access to the names of the days of the week. It returns an array containing strings like "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", and "Saturday".
+

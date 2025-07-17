@@ -1,5 +1,1 @@
-This Ruby code snippet demonstrates how to use the `IPAddr` class from the `ipaddr` library to perform IP address manipulation tasks. The code first creates a new instance of the `IPAddr` class and initializes it with an IPv4 address in CIDR notation (e.g., `'255.255.255.255/32'`).
-
-The next line of code uses a block to iterate over 33 different masks, where each mask is applied to the IP address using the `mask` method and the result is printed to the console using `puts`. The numbering of the masks starts at 0 and goes up to 32.
-
-The use of this code snippet can be helpful in scenarios where you need to perform various IP address manipulation tasks, such as creating subnets, finding available IP addresses within a range, or performing other operations that require manipulating IP addresses.
+This Ruby code snippet demonstrates how to work with IP addresses using the `ipaddr` library. Specifically, it initializes an IP address object representing `255.255.255.255/32` and then iterates 33 times, printing the iteration number along with the IP address after applying a mask to the given number. The loop uses the `ipaddr` library's `mask` method to create a new IP address object with a specific subnet mask, effectively changing the network portion of the IP address.

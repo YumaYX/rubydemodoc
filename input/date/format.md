@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates how to format a date using the `strftime` method. The `%F` format specifier is used to display the date in the ISO 8601 format, which is `YYYY-MM-DD`.
+This Ruby code snippet demonstrates formatting the current time into a string using the `strftime` method. Specifically, it uses the format string "%F", which represents the ISO 8601 date format (YYYY-MM-DD), resulting in a string representation of the current date.

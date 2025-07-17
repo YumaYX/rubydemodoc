@@ -33,4 +33,3 @@ def generate_index(rb_files, input_dir: 'input', output_dir: 'output', index_fil
     f.puts "##### Github Repository\n<https://github.com/YumaYX/rubydemodoc>"
   end
 end
-

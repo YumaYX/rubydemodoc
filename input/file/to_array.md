@@ -1,1 +1,2 @@
-This Ruby code snippet demonstrates reading a file and mapping each line to an array of strings, where the new lines are removed from the string using the `chomp` method.
+This Ruby code snippet demonstrates reading all lines from a file named 'input/file/file.txt', removing trailing newline characters from each line using the `chomp` method, and then returning a new array containing the processed lines. Specifically, the `File.readlines` method reads the file line by line, and `map(&:chomp)` applies the `chomp` method to each element of the resulting array, effectively removing the newline character ('\n') from the end of each line. The output is a new array where each string element does not contain the newline character.
+

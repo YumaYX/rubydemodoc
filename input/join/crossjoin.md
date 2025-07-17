@@ -1,6 +1,2 @@
+This Ruby code snippet demonstrates the use of the `product` method to generate all possible combinations of elements from three different arrays: `a`, `b`, and `c`. The array `a` contains the elements ['a', 'b', 'c'], array `b` contains the numbers [0, 1, 2] and array `c` contains a list of empty hash. The `product` method will iterate through each element of `a` and, for each of those elements, iterate through each element of `b` and `c`, creating all possible tuples.  For example, the first element of `a` ('a') will be combined with each element of `b` and `c`, resulting in the following tuples: `['a', 0], ['a', 1], ['a', 2]`.  The code then creates a nested structure representing all these combinations.
 
-This Ruby code snippet demonstrates how to use the `product` method in a more advanced way by chaining multiple enumerable objects together using parentheses and commas. The `product` method returns all possible combinations of elements from multiple collections passed as arguments. In this example, we are passing three collections: `'a'..'c'` (which is an inclusive range of characters), `2.times` (which is an infinite enumerable that generates the number 0, then 1, then 0 again), and `[{}]` (which is a single-element array containing an empty hash). The resulting combinations are:
-```ruby
-[["a", 0, {}], ["b", 0, {}], ["c", 0, {}], ["a", 1, {}], ["b", 1, {}], ["c", 1, {}]]
-```
-Note that the `product` method returns an array of arrays, where each subarray represents a combination of elements from the input collections.

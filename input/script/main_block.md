@@ -1,2 +1,1 @@
-
-This Ruby code snippet demonstrates a way to execute some code only if the file is being run directly as a script. This is useful when you have a Ruby script that should perform a specific action, but not when it is required by another script or module. The `if __FILE__ == $0` statement checks whether the current file (referenced by `__FILE__`) is being executed as a main program, and if so, executes the code inside the `end` block.
+This Ruby code snippet demonstrates a basic structure for a Ruby script, specifically outlining that the code block within the `if __FILE__ == $0` statement will only be executed when the script is run directly, rather than being required as a module by another script. It provides a placeholder for the core logic of the Ruby program.

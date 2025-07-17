@@ -1,4 +1,1 @@
-
-This Ruby code snippet demonstrates how to read a JSON file using the `JSON` module in Ruby. The code opens a file named `'input/json/file.json'` and uses the `File.open()` method to open the file for reading. The file is then passed to the `JSON.load()` method, which parses the JSON data and returns a Ruby object representing the data.
-
-Note: The code assumes that the input file is in JSON format and contains valid JSON data. If the input file does not contain valid JSON data, an error may occur when attempting to parse it using `JSON.load()`.
+This Ruby code snippet demonstrates how to load a JSON file into a Ruby object. Specifically, it utilizes the `JSON` library to parse the contents of a JSON file named `input/json/file.json` and store the resulting data as a Ruby object. The `JSON.load(j)` function reads the file content (`j`) and converts it into a Ruby data structure, typically a hash or array, based on the JSON format of the file.

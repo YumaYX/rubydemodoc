@@ -85,7 +85,7 @@ def process_file(path)
 
   File.open(dest, 'w') do |f|
     f.puts
-    f.puts "<small><strong>Heads up:</strong> This description was created by AI and might not be 100% accurate.</small>"
+    f.puts '<small><strong>Heads up:</strong> This description was created by AI and might not be 100% accurate.</small>'
     # 1. heading1で .rbファイル名を追加
     f.puts
     f.puts "# #{parser.base_name}"
@@ -96,13 +96,15 @@ def process_file(path)
     if File.exist?(md_path)
       f.puts File.read(md_path)
     else
-      description = describe_codes(path)
+      cmd = "source venv/bin/activate && python3.13 llm/ask.py \"#{path}\""
+      puts cmd
+      description = `#{cmd}`
       File.write(md_path, description)
       f.puts description
     end
     f.puts
     if File.exist?("#{md_path}x")
-      f.puts "### Additional Note"
+      f.puts '### Additional Note'
       f.puts File.read("#{md_path}x")
       f.puts
     end

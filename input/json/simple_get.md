@@ -1,8 +1,1 @@
-
-This Ruby code snippet demonstrates how to retrieve and parse JSON data from a RESTful API using the `Net::HTTP` class in Ruby. The first line requires the `net/http` library, which is used for making HTTP requests. The second line requires the `json` library, which is used for parsing JSON data.
-
-The code then defines the URL of the RESTful API and creates a URI object from it using the `URI(url)` method. The next line retrieves the response from the API using the `Net::HTTP.get(uri)` method, which sends an HTTP GET request to the API and returns the response as a string.
-
-Finally, the code parses the JSON data in the response using the `JSON.parse(response)` method, which converts the JSON data into a Ruby hash object that can be easily manipulated within the program.
-
-Note: The `require` statements at the beginning of the code are used to include libraries that are needed for making HTTP requests and parsing JSON data in Ruby.
+This Ruby code snippet demonstrates fetching data from a JSON API endpoint and parsing the response. It utilizes the `net/http` library to make an HTTP GET request to the provided URL, which is "https://api.openbd.jp/v1/get?isbn=9784791765553". The retrieved response, which is assumed to be a JSON string, is then parsed using the `JSON.parse` method, transforming it into a Ruby data structure for further processing.

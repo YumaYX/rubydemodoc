@@ -1,6 +1,1 @@
-
-This Ruby code snippet demonstrates how to use the `ERB` module in Ruby to process an HTML template file that contains ERB tags. The code first reads the contents of an HTML file using the `File.read` method and then uses the `ERB.new` method to create a new instance of the `ERB` class with the given template.
-
-The `@val` variable is used to store the value that will be inserted into the ERB tags in the template. The `result` method is called on the `erb` object, passing it a binding that contains the value of `@val`. The `binding` parameter allows the code to access the instance variables of the current scope.
-
-When the `result` method is called, the `ERB` class will replace all ERB tags in the template with the corresponding values from the binding. In this case, it will replace `<%= @val %>` with `'val'`. The resulting HTML output is then returned as a string.
+This Ruby code snippet demonstrates the use of the ERB (Embedded Ruby) library for template processing. Specifically, it reads the content of the file `input/erb/file.html.erb` using the `File.read` method. Then, it initializes an ERB object named `erb` with the read content. It also sets a variable named `@val` to the string 'val'. Finally, the `erb.result(binding)` method is called, which evaluates the code within the `binding` object (which represents the current execution context) within the ERB template, effectively rendering the template with the value of `@val` substituted into it.

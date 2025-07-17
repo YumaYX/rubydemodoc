@@ -1,3 +1,2 @@
-This Ruby code snippet demonstrates how to read and write data from/to a file using the `File` class. The `open` method is used to open a file, and the `read` method is used to read the contents of the file into a string variable. The `write` method is then used to write the contents of the string variable back to the file.
+This Ruby code snippet demonstrates the use of the `__FILE__` constant, which represents the path to the current source file. It's a built-in constant that provides the full path of the Ruby file being executed, allowing developers to dynamically access file information within their scripts.
 
-Note: The code snippet assumes that there is already a file named "example.txt" in the current working directory, and that it contains some text data. If the file does not exist or if there are any errors while reading/writing from/to the file, an exception will be raised.
