@@ -1,1 +1,14 @@
-This Ruby code snippet demonstrates the use of a heredoc string to define a string literal. The code initializes a string variable `value` to the string "ruby". Then, it uses a heredoc string (denoted by `<<~EOL`) to create a multiline string. Within the heredoc, the value of the `value` variable is embedded directly into the string. The `EOL` marker at the end of the heredoc signifies the end of the string.
+This Ruby code snippet demonstrates string interpolation and heredoc syntax. The code assigns the string 'ruby' to the variable `value`. Then, it uses a heredoc (`<<~EOL ... EOL`) to create a multi-line string `doc`. Inside the heredoc, it uses string interpolation (`#{value}`) to insert the value of the `value` variable into the `doc` string.  The resulting `doc` string will be "ruby".
+
+
+
+```ruby
+value = 'ruby'
+doc = <<~EOL
+ #{value}
+EOL
+```
+
+
+
+

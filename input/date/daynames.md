@@ -1,2 +1,5 @@
-This Ruby code snippet demonstrates the `Date::DAYNAMES` module, which provides an array of the days of the week in English. The `Date::DAYNAMES` module is part of the Ruby `Date` library and allows access to the names of the days of the week. It returns an array containing strings like "Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", and "Saturday".
+This Ruby code snippet demonstrates the use of the `date` library and specifically the `DAYNAMES` constant. The `require 'date'` statement loads the `date` library, which provides various date and time-related functionalities.  The `Date::DAYNAMES` constant is then accessed, which returns an array containing the names of the days of the week. This array is likely intended to be used for formatting dates or displaying day names in a user-friendly manner.
+
+
+
 

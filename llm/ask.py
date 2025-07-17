@@ -18,7 +18,7 @@ def build_rag_chain():
     embedder = OllamaEmbeddings(model="nomic-embed-text")
     vectorstore = FAISS.load_local("faiss_index", embedder, allow_dangerous_deserialization=True)
     retriever = vectorstore.as_retriever()
-    llm = OllamaLLM(model="gemma3")
+    llm = OllamaLLM(model="gemma3n")
     return RetrievalQA.from_chain_type(
         llm=llm,
         retriever=retriever,

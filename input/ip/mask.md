@@ -1,1 +1,5 @@
-This Ruby code snippet demonstrates how to work with IP addresses using the `ipaddr` library. Specifically, it initializes an IP address object representing `255.255.255.255/32` and then iterates 33 times, printing the iteration number along with the IP address after applying a mask to the given number. The loop uses the `ipaddr` library's `mask` method to create a new IP address object with a specific subnet mask, effectively changing the network portion of the IP address.
+This Ruby code snippet demonstrates the use of the `ipaddr` gem to manipulate IP addresses and their masks. First, it requires the `ipaddr` library. Then, it creates a new `IPAddr` object representing the IP address '255.255.255.255' with a /32 network mask, which is a fully specified host address. The code then iterates 33 times, and in each iteration, it calculates the IP address mask for the current loop counter `i` using the `mask(i)` method of the `IPAddr` object and prints the loop counter and the calculated mask to the console, separated by a tab. Essentially, it's demonstrating how to dynamically calculate and display different IP address masks based on a loop counter.
+
+
+
+

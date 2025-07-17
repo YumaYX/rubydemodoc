@@ -1,2 +1,5 @@
-This Ruby code snippet demonstrates how to combine user and post data, resulting in a new array of user objects enriched with post information. Specifically, it iterates through a list of user objects, and for each user, it searches the `posts` array for a matching post based on the user's `id`. If a matching post is found, the user object is merged with the post details (including `title`). If no matching post is found, the `title` attribute is set to `nil`. The final result is a new array of user objects, each containing the original user data along with associated post data if available; otherwise, the `title` will be `nil`.
+This Ruby code snippet demonstrates how to combine data from two arrays, `users` and `posts`, using the `map` and `find` methods. The code iterates through each user in the `users` array. For each user, it searches the `posts` array for a post whose `user_id` matches the current user's `id`. If a matching post is found, the `merge` method combines the user and post data into a single hash. If no matching post is found, a new hash is created with the user data and a `title` key set to `nil`. The resulting `users` array is modified in place, with each user now containing the associated post information. In essence, this code adds post details to each user record based on the user's ID.
+
+
+
 

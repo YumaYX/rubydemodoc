@@ -1,1 +1,5 @@
-This Ruby code snippet demonstrates the creation and use of a `Logger` object in Ruby. The code initializes a `Logger` instance using `Logger.new(STDOUT)`, which directs log output to the standard output stream. It then sets the log level to `Logger::INFO` to capture informational messages. The code includes calls to `logger.warn`, `logger.info`, and `logger.debug`, which would have been logged if the log level was set to `Logger::INFO` or higher. However, because the log level is set to `Logger::INFO`, only `logger.info` and `logger.warn` would have been output to the console.
+This Ruby code snippet demonstrates the usage of the `Logger` class in Ruby for recording log messages. The code first initializes a logger that directs output to the standard output (STDOUT). It then sets the logging level to `Logger::INFO`, which means that messages with a severity of INFO, WARN, and ERROR will be logged.  The code then proceeds to log several messages with different severities: a warning message ("Nothing to do!"), an informational message ("Program started"), and a debug message ("Created logger"). Because the logging level is set to INFO, the debug message is not output. The warning and informational messages are output to the standard output.
+
+
+
+

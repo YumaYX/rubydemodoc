@@ -1,1 +1,5 @@
-This Ruby code snippet demonstrates reading a CSV file with a Byte Order Mark (BOM) and UTF-8 encoding, treating the first row as headers, and then converting each row into a hash. The `CSV.read` method is utilized to read the CSV file, specifying the `encoding` as "BOM|UTF-8" to handle the BOM correctly. The `headers: true` option instructs the parser to interpret the first row as column headers. Finally, `.map(&:to_h)` transforms each row (which is an array of strings) into a hash, where the column headers become the keys and the corresponding values from the row become the values.
+This Ruby code snippet demonstrates reading a CSV file, converting each row to a hash, and then mapping the resulting hashes. The `require 'csv'` line imports the CSV library.  The `CSV.read('input/csv/file.csv', encoding: "BOM|UTF-8", headers: true)` part reads the CSV file located at 'input/csv/file.csv'. It specifies the encoding as "BOM|UTF-8", which handles Byte Order Mark and UTF-8 encoding. The `headers: true` option indicates that the first row of the CSV file contains the headers, which will be used as keys in the resulting hashes. The `.map(&:to_h)` part then iterates over each row (which is a CSV row object) and converts it into a hash.  Finally, the `map` method transforms the array of hashes into a new array containing these hashes.
+
+
+
+

@@ -1,1 +1,5 @@
-This Ruby code snippet demonstrates object serialization using the `Marshal` module. It creates a hash named `person` containing a name and age, then serializes this hash into a string representation using `Marshal.dump()`. Finally, it writes this serialized string to a file named `input/serialization/person.dat` in binary write mode (`wb`).
+This Ruby code snippet demonstrates how to serialize a Ruby object into a byte stream and write it to a file using the `Marshal` module. First, a hash named `person` is created with key-value pairs for "name" and "age". Then, the `Marshal.dump()` method is used to serialize the `person` hash into a byte stream, which is stored in the `serialized_person` variable. Finally, a file named "person.dat" is opened in binary write mode (`'wb'`), and the `file.write()` method is used to write the `serialized_person` byte stream to the file. This effectively saves the serialized representation of the `person` object to the specified file.
+
+
+
+
