@@ -35,6 +35,15 @@ def main():
     rag_chain = build_rag_chain()
     result = rag_chain.invoke({"query": query})
     print(result["result"])
+    
+    docs = rag_chain.retriever.get_relevant_documents(query)
+    context = "\n\n".join([doc.page_content for doc in docs])
+    full_prompt = rag_chain.combine_documents_chain.llm_chain.prompt.format(
+        context=context,
+        question=query
+    )
+    print(full_prompt)
+
 
 if __name__ == "__main__":
     main()
