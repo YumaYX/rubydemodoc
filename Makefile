@@ -23,6 +23,7 @@ rag: ollamamodel cleandocs clonerubydoc
 	mkdir -p docs
 	find doctree/refm/api/src -type f | while read line; do cp -v $$line docs/; done
 	make pythonenv
+	source venv/bin/activate && python3.13 llm/build_index.py
 
 cleandocs:
 	rm -rf docs doctree venv
@@ -31,4 +32,3 @@ cleandocs:
 pythonenv:
 	python3.13 -m venv venv
 	source venv/bin/activate && pip3.13 install -r requirements.txt
-	source venv/bin/activate && python3.13 llm/build_index.py
