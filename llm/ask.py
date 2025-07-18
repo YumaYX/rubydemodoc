@@ -42,7 +42,7 @@ def main():
         context=context,
         question=query
     )
-    print(full_prompt)
+    #print(full_prompt)
 
 
 if __name__ == "__main__":
