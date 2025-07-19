@@ -1,5 +1,5 @@
 default:
-	cat Makefile
+	cat Makefile | grep -E "^.?*:" | grep -Pv '^\t'
 
 delmd:
 	find input -name "*.md" | xargs rm -fv
