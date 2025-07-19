@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates reading a JSON file and parsing it into a Ruby hash. It first requires the `json` library, then opens the file `input/json/file.json`, loads the JSON data using `JSON.load`, and stores the resulting Ruby hash in a variable. The example JSON data is `{"key" => "value"}`.
+This Ruby code snippet demonstrates reading a JSON file named `file.json` located in the `input/json/` directory and parsing its contents into a Ruby hash, which is then stored in the variable `JSON.load(j)`.

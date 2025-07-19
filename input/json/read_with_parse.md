@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates reading a JSON file, parsing its content, and converting it into a Ruby hash. It first requires the `json` library, then reads the entire contents of a JSON file located at `input/json/file.json`. Finally, it uses `JSON.parse` to convert the JSON string into a Ruby hash, which is then returned.
+This Ruby code snippet demonstrates parsing a JSON file named 'file.json' using the `JSON.parse` method, which converts the JSON string into a Ruby hash with a key "key" and value "value".

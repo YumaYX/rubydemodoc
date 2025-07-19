@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the use of a heredoc to define a string. The heredoc allows for multi-line string literals, and the `EOL` marker indicates the end of the string definition. The resulting string contains the word "string" followed by a newline character.
+This Ruby code snippet demonstrates the use of the `<<~` operator to create a heredoc string, which allows you to define multiline strings easily, including newline characters.

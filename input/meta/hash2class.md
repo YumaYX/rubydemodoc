@@ -1,3 +1,1 @@
-This Ruby code snippet demonstrates creating a dynamic class from a hash. 
-
-First, a hash `data` containing person information (name, age, city) is defined. The `create_dynamic_class` function takes this hash and dynamically generates a new class. This class automatically defines instance variables corresponding to the keys in the input hash, using `attr_accessor` for easy access.  The `initialize` method populates these instance variables with the values from the hash.  A new object is then created using this dynamically generated class, and the code demonstrates accessing the instance variables (name, age, city) of the object.
+This Ruby code snippet demonstrates creating a dynamic class from a hash. The `create_dynamic_class` function generates a class with attributes corresponding to the keys in the input hash, allowing for instance initialization with those key-value pairs.

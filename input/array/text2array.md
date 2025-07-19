@@ -1,5 +1,1 @@
-This Ruby code snippet demonstrates how to read a multi-line string and process it. 
-
-First, a heredoc string containing three lines ("a", "b", "c") is assigned to the variable `text`. 
-
-Then, the `lines` variable is created by splitting the `text` string into an array of individual lines using the `lines` method. The `chomp` method is then applied to each line to remove any trailing newline characters.  The resulting `lines` array contains the strings "a", "b", and "c".
+This Ruby code snippet demonstrates how to split a multi-line string into an array of strings, removing trailing newline characters from each line. Specifically, it uses `text.lines` to iterate through the lines of the `text` string, `map(&:chomp)` to call the `chomp` method on each line (which removes the trailing newline), and stores the result in the `lines` variable.

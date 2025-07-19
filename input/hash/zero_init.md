@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the use of `Hash.new(0)` to create a hash where missing keys default to the value 0. It then increments the value associated with the key 'key' to 1. Effectively, it initializes a hash with a default value of 0 and then increments the value for a specific key.
+This Ruby code snippet demonstrates initializing a hash with a default value of 0 for all keys. When a key is accessed for the first time, the default value is assigned to it. Subsequent accesses increment the value associated with that key.

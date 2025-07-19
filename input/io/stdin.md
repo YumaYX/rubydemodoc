@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates reading from standard input.  `$stdin.read` attempts to read the entire input from the standard input stream.  The example shows that the result of this operation is `nil`, likely because no input has been provided or the input stream has been closed.
+This Ruby code snippet demonstrates that reading from `$stdin` (standard input) returns `nil` if no input is provided.

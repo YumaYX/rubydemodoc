@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates a basic Ruby file header. It simply indicates the current file is being executed in an interactive Ruby environment (IRB). It doesn't contain any functional code, just metadata about its execution context.
+This Ruby code snippet demonstrates accessing the filename of the current file being executed, which is "(irb)" in the interactive Ruby interpreter.

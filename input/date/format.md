@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates how to get the current date in "YYYY-MM-DD" format. It first captures the current timestamp using `Time.now`, then formats it using the `%F` format specifier, which extracts the date portion of the timestamp. The result is a string representing the current date in the specified format.
+This Ruby code snippet demonstrates formatting a `Time` object into a string representation of the date in the format "YYYY-MM-DD" using the `strftime` method.

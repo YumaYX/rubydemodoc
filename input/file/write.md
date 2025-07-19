@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates writing the string "Hello" to a file named "filewr.txt" located in the "input/file/" directory. The `#=> 5` indicates that the `File.write` method returned the number 5, which likely represents the number of bytes written to the file.
+This Ruby code snippet demonstrates writing the string "Hello" to a file named "filewr.txt" located in the "input/file" directory, and returns the number of bytes written (which is 5).

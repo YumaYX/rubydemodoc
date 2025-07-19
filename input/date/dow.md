@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the creation of a constant array named `DOW_JP` containing the Japanese weekday names. It uses array methods (`%w`, `map`, and `freeze`) to define an immutable array of strings representing the days of the week.  `freeze` ensures the array's contents cannot be changed after creation.
+This Ruby code snippet demonstrates creating a constant array named `DOW_JP` containing the days of the week in Japanese, using `.map(&:freeze)` to ensure immutability.

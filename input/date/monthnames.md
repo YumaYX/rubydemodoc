@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates accessing the `MONTHNAMES` constant from the `Date` module.  `Date::MONTHNAMES` returns an array containing the names of the months of the year, starting with January and ending with December. The first element is `nil`.
+This Ruby code snippet demonstrates the use of the `Date` module, specifically accessing the `Date::MONTHNAMES` array, which contains an array of month names (January to December) in English.

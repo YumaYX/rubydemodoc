@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates string interpolation and heredoc usage. It assigns the string "ruby" to the variable `value`. Then, it uses a heredoc (`<<~EOL ... EOL`) to create a string `doc` that includes the value of `value` on a new line. The result is a string containing "ruby" followed by a newline character.
+This Ruby code snippet demonstrates string interpolation, where the value of the variable `value` ("ruby") is embedded directly within a string literal (EOL).

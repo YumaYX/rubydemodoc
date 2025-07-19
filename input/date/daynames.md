@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates accessing the `DAYNAMES` constant from the `Date` module. The `DAYNAMES` constant is an array containing the names of the days of the week. The code shows that `Date::DAYNAMES` returns the array `["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]`.
+This Ruby code snippet demonstrates the use of the `Date` class, including accessing the array of day names (`Date::DAYNAMES`) for use in date calculations and formatting.

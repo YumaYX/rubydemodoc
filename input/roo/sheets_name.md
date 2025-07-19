@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates loading an Excel file using the `roo` gem. It first loads the Excel file named 'book.xlsx' from the 'input/roo/' directory into an `Roo::Excelx` object. Then, it retrieves a list of sheet names present in the Excel file, which are "mysheet" and "mysheet2".
+This Ruby code snippet demonstrates using the `roo` gem to interact with an Excel file. It loads the 'book.xlsx' file using `Roo::Excelx` and then lists the sheet names present in the file, which are "mysheet" and "mysheet2".

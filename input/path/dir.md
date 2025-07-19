@@ -1,4 +1,1 @@
-This Ruby code snippet demonstrates accessing the current working directory. The `__dir__` variable, when evaluated, returns the string representing the absolute path to the directory from which the Ruby script is executed. In this case, it returns ".", indicating the current directory.
-
-
-
+This Ruby code snippet demonstrates the `__dir__` method, which returns a string containing the names of all files and directories in the current directory. In this case, it returns "." (the current directory).

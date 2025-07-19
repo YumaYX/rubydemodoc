@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates reading the entire content of the file named "filewr.txt" located in the "input/file/" directory. The `File.read` method reads the file and returns its content as a single string, which in this case is "Hello".
+This Ruby code snippet demonstrates reading the entire content of a text file named "filewr.txt" located in the "input/file/" directory, returning the string "Hello".
