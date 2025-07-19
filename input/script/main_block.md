@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates a common practice: it executes code only when the script is run directly, not when it's required as a library or included in another script. It uses the `__FILE__` and `$0` constants to achieve this.
+This Ruby code snippet demonstrates a conditional block that ensures code within it only executes when the script is run directly, not when it's required as a module or included in another script. It returns `nil` as it doesn't perform any operation.

@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates writing a JSON representation of a hash to a file. It uses the `json` library to serialize the hash `{'key' => 'value'}` into a JSON string, and then writes this string to a file named 'input/json/file.json'.
+This Ruby code snippet demonstrates loading the `json` library, creating a hash with a key-value pair, and then writing that hash to a JSON file named `file.json` in the `input/json/` directory.

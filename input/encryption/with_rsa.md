@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the generation of an RSA key pair (private and public keys) using OpenSSL. It then encrypts a string "Ruby" with the public key and successfully decrypts it back to the original string, showcasing the basic RSA encryption/decryption process.
+This Ruby code snippet demonstrates the generation of an RSA key pair, encryption of a string, and subsequent decryption using the private key. It utilizes the `OpenSSL` library to perform these cryptographic operations, effectively demonstrating basic RSA key management and encryption.

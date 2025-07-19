@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the use of the `Date` class, including accessing the array of day names (`Date::DAYNAMES`) for use in date calculations and formatting.
+This Ruby code snippet demonstrates the use of the `date` library, specifically accessing the list of day names (`Date::DAYNAMES`) which returns an array of the days of the week.

@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates reading a JSON file named `file.json` located in the `input/json/` directory and parsing its contents into a Ruby hash, which is then stored in the variable `JSON.load(j)`.
+This Ruby code snippet demonstrates reading a JSON file named `file.json` located in the `input/json/` directory. It uses the `JSON` library to parse the file content and load it into a Ruby hash, which is then stored in the variable `JSON.load(j)`.

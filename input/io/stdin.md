@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates that reading from `$stdin` (standard input) returns `nil` if no input is provided.
+This Ruby code snippet demonstrates reading the entire standard input stream. It returns `nil` because the standard input is initially empty.

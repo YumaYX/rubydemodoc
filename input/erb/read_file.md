@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the use of the `ERB` library to render an ERB template (`file.html.erb`). It reads the file, initializes an ERB object, sets a variable `@val` to "val", and then renders the template, producing the HTML `<h1>header</h1>\n\n<p>val</p>\n`.
+This Ruby code snippet demonstrates the use of the `ERB` library for embedding Ruby code within HTML templates. It reads an ERB file, creates an `ERB` object, sets a variable `@val` to "val", and then uses the `result` method to render the template, outputting an HTML fragment with the variable's value.

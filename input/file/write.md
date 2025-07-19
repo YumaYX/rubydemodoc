@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates writing the string "Hello" to a file named "filewr.txt" located in the "input/file" directory, and returns the number of bytes written (which is 5).
+This Ruby code snippet demonstrates writing the string "Hello" to a file named `filewr.txt` located within the `input/file/` directory. The `File.write` method returns the number of bytes written to the file, which in this case is 5 (the length of the string "Hello").

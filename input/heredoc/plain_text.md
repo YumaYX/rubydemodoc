@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the use of the `<<~` operator to create a heredoc string, which allows you to define multiline strings easily, including newline characters.
+This Ruby code snippet demonstrates the use of the `<<~` operator to create a heredoc string, allowing for multi-line strings with easy handling of newline characters. It defines a string named `doc` containing the word "string" and a newline, which is then assigned to the variable.

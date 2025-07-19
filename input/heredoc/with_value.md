@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates string interpolation, where the value of the variable `value` ("ruby") is embedded directly within a string literal (EOL).
+This Ruby code snippet demonstrates string interpolation, where the variable `value` ("ruby") is embedded directly into a string literal (denoted by `EOL`). The resulting string contains the value of the variable within a multi-line string.

@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates reading a JSON file named `file.json` from the `input/json/` directory and parsing its contents into a Ruby hash, which is then represented as `{"key" => "value"}`.
+This Ruby code snippet demonstrates reading a JSON file named 'file.json' from the 'input/json' directory, parsing its contents using the `JSON.load` method, and returning the parsed JSON data as a Ruby hash with the key "key" and the value "value".
