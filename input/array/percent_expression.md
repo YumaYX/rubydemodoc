@@ -1,13 +1,5 @@
-This Ruby code snippet demonstrates the use of different string literals in Ruby. It showcases the use of `%w`, `%W`, `%i`, and `%I` operators for creating arrays of strings. 
+This Ruby code snippet demonstrates string interpolation and different ways to create arrays of strings. It shows that:
 
-The `%w` operator creates an array of string literals without interpolation. In the first example, it creates an array containing "a", "b", "c", and the string "ruby".
-
-The `%W` operator creates an array of string literals with interpolation. In the second example, it also creates an array containing "a", "b", "c", and the string "ruby".
-
-The `%i` operator creates an array of symbols. In the third example, it creates an array containing the symbols "a", "b", and "c", and the string "ruby".
-
-The `%I` operator creates an array of string literals without interpolation, but it also ignores any symbols that are passed to it. In the fourth example, it creates an array containing "a", "b", "c", and the string "ruby". The symbols "a", "b", and "c" are ignored.
-
-
-
-
+- `%w` (word array) and `%W` (string array) create arrays of strings.  `%W` automatically interpolates variables within the string.
+- `%i` (identifier array) creates an array of symbols.  It also interpolates variables within the string.
+- The code uses string interpolation (`#{str}`) to embed the value of the `str` variable ("ruby") within the created arrays. The difference between `%w` and `%W` is that `%W` automatically converts the interpolated string to a string, while `%w` leaves it as a string literal.

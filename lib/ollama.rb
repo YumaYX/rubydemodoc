@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'net/http'
 require 'uri'
 require 'json'
@@ -5,7 +7,7 @@ require 'json'
 def ollama_request(prompt)
   url = URI.parse('http://localhost:11434/api/generate')
   data = {
-    "model": 'codellama:13b-instruct',
+    "model": 'gemma3n',
     "prompt": prompt,
     "stream": false
   }
@@ -24,6 +26,12 @@ end
 
 def describe_codes(file_name)
   content = File.read(file_name)
-  content = "Write about the following ruby codes in English using markdown format. Just the answer. Please omit backticks. Add a note to answer in complete sentences. Start your response with 'This Ruby code snippet demonstrates'.\n---\n#{content}"
+  content = "Write about the following ruby codes in English using markdown format. Just the answer. Start your response with 'This Ruby code snippet demonstrates'.\n---\n#{content}"
   ollama_request(content)
 end
+
+def describe_output(result)
+  content = "Summary about the following ruby codes in English using markdown format, in briefly. Just the answer. Start your response with 'This Ruby code snippet demonstrates'.\n---\n#{result}"
+  ollama_request(content)
+end
+

@@ -77,6 +77,10 @@ def process_file(path)
   puts File.basename(path)
   parser = FilePathParser.new(path)
 
+  # ruby irb
+  result = run_irb_with_script(path)
+  markdown_result = "```ruby\n#{clean_irb_output(result)}```"
+
   # 出力ファイル名を 親ディレクトリ_ファイル名.md に変更
   joined_name = "#{parser.parent_name}_#{parser.base_name.sub(/\.rb\z/, '.md')}"
   dest = File.join('output', joined_name)
@@ -96,9 +100,10 @@ def process_file(path)
     if File.exist?(md_path)
       f.puts File.read(md_path)
     else
-      cmd = "source venv/bin/activate && python3.13 llm/ask.py \"#{path}\""
-      puts cmd
-      description = `#{cmd}`
+      # cmd = "source venv/bin/activate && python3.13 llm/ask.py \"#{path}\""
+      # puts cmd
+      # description = `#{cmd}`
+      description = describe_output(markdown_result)
       File.write(md_path, description)
       f.puts description
     end
@@ -111,8 +116,7 @@ def process_file(path)
   end
 
   # 3. IRB結果をコードブロックで追記
-  result = run_irb_with_script(path)
-  markdown_result = "```ruby\n#{clean_irb_output(result)}```"
+  # result = run_irb_with_script(path)
 
   File.open(dest, 'a') do |f|
     f.puts "\n### Ruby code snippet\n"

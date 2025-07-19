@@ -1,5 +1,1 @@
-This Ruby code snippet demonstrates how to combine data from two arrays, `users` and `posts`, using the `map` and `find` methods. The code iterates through each user in the `users` array. For each user, it searches the `posts` array for a post whose `user_id` matches the current user's `id`. If a matching post is found, the `merge` method combines the user and post data into a single hash. If no matching post is found, a new hash is created with the user data and a `title` key set to `nil`. The resulting `users` array is modified in place, with each user now containing the associated post information. In essence, this code adds post details to each user record based on the user's ID.
-
-
-
-
+This Ruby code snippet demonstrates how to associate posts with users. It starts with a list of users and a list of posts. It then iterates through each user, finds the corresponding posts using the `user_id`, and merges the post data into the user object. If a user has no posts, a `title` of `nil` is added to the user object. The result is a list of users, each now containing their associated posts.

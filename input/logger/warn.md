@@ -1,6 +1,1 @@
-This Ruby code snippet demonstrates the use of the `Logger` class to record messages with different severity levels. 
-
-The code first requires the `logger` library. It then creates a new logger instance, configured to output to standard output (STDOut). The code sets the logging level to `Logger::WARN`, meaning that only warnings and more severe messages will be logged. 
-
-Next, it demonstrates logging messages with different severity levels: a warning message ("Nothing to do!"), an informational message ("Program started"), a debug message ("Created logger"). Because the logging level is set to WARN, the informational and debug messages will not be displayed. The warning message will be displayed on the standard output because it is above the WARN level.
-
+This Ruby code snippet demonstrates basic logging functionality using the `Logger` class. It initializes a logger to output to the standard output (STDOUT), sets the logging level to `WARN`, and then demonstrates logging messages at different levels: `WARN`, `INFO`, and `DEBUG`. The `warn` method outputs a warning message, while `info` and `debug` messages are not displayed because the logging level is set to `WARN`, which only displays messages of that level or higher.

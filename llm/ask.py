@@ -5,7 +5,6 @@ from langchain.chains import RetrievalQA
 
 PROMPT = (
     "Write about the following ruby codes in English using markdown format. Just the answer.\n"
-    "Please omit backticks. Add a note to answer in complete sentences.\n"
     "Start your response with 'This Ruby code snippet demonstrates'.\n"
     "---\n"
 )
@@ -17,7 +16,7 @@ def read_file(filepath):
 def build_rag_chain():
     embedder = OllamaEmbeddings(model="nomic-embed-text")
     vectorstore = FAISS.load_local("faiss_index", embedder, allow_dangerous_deserialization=True)
-    retriever = vectorstore.as_retriever()
+    retriever = vectorstore.as_retriever(search_kwargs={"k": 10})
     llm = OllamaLLM(model="gemma3n")
     return RetrievalQA.from_chain_type(
         llm=llm,
@@ -35,7 +34,7 @@ def main():
     rag_chain = build_rag_chain()
     result = rag_chain.invoke({"query": query})
     print(result["result"])
-    
+
     docs = rag_chain.retriever.get_relevant_documents(query)
     context = "\n\n".join([doc.page_content for doc in docs])
     full_prompt = rag_chain.combine_documents_chain.llm_chain.prompt.format(
@@ -44,6 +43,6 @@ def main():
     )
     #print(full_prompt)
 
-
 if __name__ == "__main__":
     main()
+

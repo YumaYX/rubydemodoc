@@ -1,3 +1,1 @@
-This Ruby code snippet demonstrates how to get the current date in ISO 8601 format. The code first captures the current time using `Time.now` and then formats it using the `stftime("%F")` method. The `%F` format specifier represents the date in ISO 8601 format, which is YYYY-MM-DD. The resulting formatted date string is then assigned to the variable `t`.
-
-
+This Ruby code snippet demonstrates how to get the current date in "YYYY-MM-DD" format. It first captures the current timestamp using `Time.now`, then formats it using the `%F` format specifier, which extracts the date portion of the timestamp. The result is a string representing the current date in the specified format.
