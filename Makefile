@@ -21,7 +21,7 @@ ollamamodel:
 
 rag: ollamamodel cleandocs clonerubydoc
 	mkdir -p docs
-	find doctree/refm/api/src -type f | while read line; do cp -v $$line docs/; done
+	find doctree/refm -type f | while read line; do cp -v $$line docs/; done
 	make pythonenv
 	source venv/bin/activate && python3.13 llm/build_index.py
 
