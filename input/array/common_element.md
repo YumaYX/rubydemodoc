@@ -1,0 +1,1 @@
+This Ruby code snippet demonstrates finding common elements between two arrays, `a` and `b`, using intersection and `find`. It attempts to find the first common element in alphabetical order and by checking each element of array `a` against array `b`. The code returns `nil` in all cases, indicating no common elements were found.
