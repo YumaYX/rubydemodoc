@@ -100,9 +100,9 @@ def process_file(path)
     if File.exist?(md_path)
       f.puts File.read(md_path)
     else
-      # cmd = "source venv/bin/activate && python3.13 llm/ask.py \"#{path}\""
-      # puts cmd
-      # description = `#{cmd}`
+      #cmd = "source venv/bin/activate && python3.13 llm/ask.py \"#{path}\""
+      #puts cmd
+      #description = `#{cmd}`
       description = describe_output(markdown_result)
       File.write(md_path, description)
       f.puts description
@@ -123,4 +123,5 @@ def process_file(path)
     f.puts markdown_result
     f.puts "\nExecuted with Ruby `#{RUBY_VERSION}`."
   end
+  #exit if path.include?("percent")
 end
