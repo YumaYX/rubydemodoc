@@ -1,1 +1,4 @@
-This Ruby code snippet demonstrates creating a frozen array named `DOW_JP` containing the days of the week in Japanese. It uses `map(&:freeze)` to create an array of strings and then freezes the entire array to prevent modifications.
+This Ruby code snippet demonstrates the creation of a frozen array containing the Japanese abbreviations for the days of the week.  `%w[...]` creates an array of strings. `.map(&:freeze)` iterates through the array and freezes each string element (making it immutable). Finally, `.freeze` freezes the entire array itself, preventing modification. This improves performance and prevents accidental changes to the day names.
+
+
+

@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates date manipulation. It first requires the `date` library. Then, it gets the current date. Finally, it calculates the date of the previous Monday from the current date by subtracting the current day of the week (wday) from the current date and adding 1.
+This Ruby code snippet demonstrates date manipulation. It first requires the `date` library. Then, it gets the current date and calculates the date of this Monday by subtracting the day of the week from the current date and adding 1. The result is the `Date` object representing this Monday.

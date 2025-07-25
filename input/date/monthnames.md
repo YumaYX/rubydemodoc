@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates accessing the `Date::MONTHNAMES` array, which contains an array of month names as strings. The `require 'date'` line ensures the `Date` module is loaded, providing access to this array and other date-related functionalities.
+This Ruby code snippet demonstrates the use of the `Date` module to access month names. `require 'date'` loads the `date` library. `Date::MONTHNAMES` then returns an array containing the names of the months, with `nil` as the first element (index 0), followed by "January" through "December".

@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the use of the `date` library, specifically accessing the list of day names (`Date::DAYNAMES`) which returns an array of the days of the week.
+This Ruby code snippet demonstrates the use of the `Date` module to access the names of days of the week. It first requires the `date` library and then retrieves a constant array named `DAYNAMES` which contains the names of the days, starting with Sunday.

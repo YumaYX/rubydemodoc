@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates obtaining the current date and time, then formatting it to display only the date in the format YYYY-MM-DD using the `strftime` method.
+This Ruby code snippet demonstrates obtaining the current time and formatting it as a string. `Time.now` gets the current date and time. `strftime("%F")` then formats this time object into a date string with the format "YYYY-MM-DD".
