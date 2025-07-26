@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates reading all lines from a file named "file.txt" located in the "input/file" directory, removing trailing newline characters from each line, and returning the lines as an array of strings.
+This Ruby code snippet demonstrates reading a file line by line, removing trailing whitespace (like newlines) from each line, and returning an array of strings where each string represents a line from the file. `File.readlines` reads the file, and `.map(&:chomp)` iterates through each line, applying the `chomp` method to remove the newline character.
