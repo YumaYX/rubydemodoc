@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates loading the `json` library, creating a hash with a key-value pair, and then writing that hash to a JSON file named `file.json` in the `input/json/` directory.
+This Ruby code snippet demonstrates creating a JSON file. It first requires the `json` library. Then, it defines a hash with a key-value pair. Finally, it writes the hash to a file named `file.json` within the `input/json/` directory, converting the hash into a JSON string using `JSON.dump`. The return value '15' represents the number of bytes written to the file.
