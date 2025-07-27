@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates the `__dir__` method, which returns a list of the names of the files and directories in the current directory. In this case, it returns "." indicating the current directory.
+This Ruby code snippet demonstrates the `__dir__` magic constant. It returns the directory name of the current file being executed, represented as a string. In this case, `"."` indicates the current directory.

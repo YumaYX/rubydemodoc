@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates accessing the filename of the currently executing Ruby file. It returns the string "(irb)" when run in the interactive Ruby interpreter (irb).
+This Ruby code snippet demonstrates a special global constant `__FILE__` which, when evaluated in an Interactive Ruby (IRB) session, returns a string representing the current file being executed. In this specific IRB context, it returns "(irb)" because the code is being executed directly within the interactive session, not from a file.  It effectively indicates the source context of execution.
