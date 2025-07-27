@@ -1,1 +1,1 @@
-This Ruby code snippet fetches data from an API using HTTP, parses the response as JSON, and returns a Ruby array representing the parsed JSON data. It retrieves information about a book based on its ISBN.
+This Ruby code snippet demonstrates fetching book data from the OpenBD API using the `net/http` and `json` libraries. It retrieves data for a book with ISBN 9784791765553, parses the JSON response, and effectively extracts book details like title, author, publisher, and reviews.
