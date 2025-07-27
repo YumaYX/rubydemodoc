@@ -9,7 +9,8 @@ def ollama_request(prompt)
   data = {
     "model": 'gemma3:27b',
     "prompt": prompt,
-    "stream": false
+    "stream": false,
+    "temperature": 0.1
   }
   http = Net::HTTP.new(url.host, url.port)
   http.use_ssl = (url.scheme == 'https')
