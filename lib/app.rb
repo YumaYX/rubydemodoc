@@ -88,8 +88,6 @@ def process_file(path)
   FileUtils.mkdir_p('output')
 
   File.open(dest, 'w') do |f|
-    f.puts
-    f.puts '<small><strong>Heads up:</strong> This description was created by AI and might not be 100% accurate.</small>'
     # 1. heading1で .rbファイル名を追加
     f.puts
     f.puts "# #{parser.base_name}"
@@ -98,6 +96,8 @@ def process_file(path)
     # 2. 元のMarkdownの内容（存在すれば）
     md_path = File.join(parser.dir_name, parser.md_name)
     if File.exist?(md_path)
+      f.puts '<small><strong>Heads up:</strong> This description was created by AI and might not be 100% accurate.</small>'
+      f.puts
       f.puts File.read(md_path)
     else
       #cmd = "source venv/bin/activate && python3.13 llm/ask.py \"#{path}\""
