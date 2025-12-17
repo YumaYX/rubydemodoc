@@ -25,7 +25,7 @@ def generate_index(rb_files, input_dir: 'input', output_dir: 'output', index_fil
     f.puts
 
     entries.each do |folder, files|
-      f.puts "## #{folder}\n\n"
+      f.puts "## #{folder.upcase}\n\n"
       files.each do |file|
         f.puts "- [#{file[:display]}](#{file[:link]})"
       end
