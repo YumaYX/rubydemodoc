@@ -14,7 +14,7 @@ def create_dynamic_class(hash)
   end
 end
 
-kls = create_dynamic_class data
+kls = create_dynamic_class(data)
 obj = kls.new
 
 obj
