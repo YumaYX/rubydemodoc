@@ -1,1 +1,1 @@
-This Ruby code snippet demonstrates creating an array containing all lowercase letters (a-z) and their corresponding numeric digits (0-9) along with common special characters, using the range "0".."z" and the `to_a` method to convert it to an array.
+This Ruby code snippet demonstrates creating an array containing all printable ASCII characters, including space, using the range operator `" ".."~` and converting it to an array using `.to_a`.
