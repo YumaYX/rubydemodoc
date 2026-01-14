@@ -30,14 +30,11 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3'
+          ruby-version: head
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build Pages (markdown + ruby script)
         run: |
-          cat <<'GEMFILEEOF' >> Gemfile
-          gem 'ys1', git: 'https://github.com/YumaYX/YS1.git'
-          GEMFILEEOF
           bundle install
           bundle exec rake
           cp -pr output/* .
