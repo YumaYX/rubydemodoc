@@ -21,7 +21,7 @@ def generate_index(rb_files, input_dir: 'input', output_dir: 'output', index_fil
   end
 
   File.open(index_file, 'w') do |f|
-    f.puts "This site provides a collection of Ruby script examples, handy cheat sheets, and clear, concise explanations — all in one place. Each page shows real Ruby code you can run and learn from, helping you grasp both the syntax and the logic behind it."
+    f.puts 'This site provides a collection of Ruby script examples, handy cheat sheets, and clear, concise explanations — all in one place. Each page shows real Ruby code you can run and learn from, helping you grasp both the syntax and the logic behind it.'
     f.puts
 
     entries.each do |folder, files|

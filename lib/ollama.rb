@@ -35,4 +35,3 @@ def describe_output(result)
   content = "Write about the following ruby codes in English using markdown format, in briefly. Just the answer. Start your response with 'This Ruby code snippet demonstrates'.\n---\n#{result}"
   ollama_request(content)
 end
-
