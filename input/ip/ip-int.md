@@ -1,0 +1,1 @@
+This Ruby code snippet demonstrates converting an IP address string (e.g., "192.168.1.10") into its integer representation, then extracting its individual octets (first, second, third, and fourth) and finally converting it back to an IP address string. It utilizes bitwise operations and string manipulation for this conversion.
